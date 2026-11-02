@@ -1,9 +1,9 @@
 [
   { "id": "all", "label": "All mods" },
-  { "id": "cost", "label": "💰 Cost & Usage" },
-  { "id": "overview", "label": "📊 Monitoring" },
-  { "id": "safety", "label": "🔒 Security" },
-  { "id": "read", "label": "🎨 Themes & Display" },
-  { "id": "flow", "label": "⚡ Productivity" },
-  { "id": "fun", "label": "🎮 Games & Fun" }
+  { "id": "cost", "label": "💰 Cost & Usage", "description": "see your tokens, limits and prompt cache, and spend less" },
+  { "id": "overview", "label": "📊 Monitoring", "description": "watch agents, files and everything you have installed" },
+  { "id": "safety", "label": "🔒 Security", "description": "keep API keys and secrets out of Claude's reach" },
+  { "id": "read", "label": "🎨 Themes & Display", "description": "better-looking answers, themes and pasted images" },
+  { "id": "flow", "label": "⚡ Productivity", "description": "tasks, diagrams, memory and clearer prompts" },
+  { "id": "fun", "label": "🎮 Games & Fun", "description": "games and pixel pets while Claude works" }
 ]

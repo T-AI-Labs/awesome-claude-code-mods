@@ -12,9 +12,7 @@ const mods = readJson('data/mods.json')
   .map(mod => ({ ...mod, result: results.mods[mod.id] }))
   .filter(mod => mod.result?.validated && mod.result?.tested)
 
-const pageOf = mod => `${SITE}mods/${mod.id}/`
 const imageOf = mod => (mod.images[0].endsWith('.svg') ? mod.images[0] : `site/posters/${mod.id}.webp`)
-const authorOf = mod => mod.repo.split('/')[0]
 
 const wall = WALL.map(id => mods.find(mod => mod.id === id)).filter(Boolean)
 const rows = []
@@ -23,39 +21,20 @@ for (let start = 0; start < wall.length; start += 3) {
   rows.push(
     `<tr>${wall
       .slice(start, start + 3)
-      .map(mod => `<td width="33%"><a href="${pageOf(mod)}"><img src="${imageOf(mod)}" alt="${mod.name}: ${mod.tagline}"></a></td>`)
+      // The hash opens the mod in the gallery and still lands on the gallery if the mod has dropped out since.
+      .map(mod => `<td width="33%"><a href="${SITE}#${mod.id}"><img src="${imageOf(mod)}" alt="${mod.name}: ${mod.tagline}"></a></td>`)
       .join('')}</tr>`,
   )
 }
 
-const entry = mod => {
-  const facts = [
-    mod.result.usesTokens ? 'Can use tokens' : 'No tokens',
-    mod.result.usesNetwork ? 'Uses network' : 'No network',
-    `${mod.result.pass} ${mod.result.pass === 1 ? 'test passes' : 'tests pass'}`,
-  ].join(' · ')
-
-  return `<tr>
-<td width="280"><a href="${pageOf(mod)}"><img src="${imageOf(mod)}" width="260" alt="${mod.name}"></a></td>
-<td><a href="${pageOf(mod)}"><b>${mod.tagline}</b></a><br><code>${mod.name}</code> by ${authorOf(mod)}${mod.own ? ' (ours)' : ''}<br><sub>${facts}</sub></td>
-</tr>`
-}
-
-const sections = categories
+const browse = categories
   .filter(category => category.id !== 'all')
-  .map(category => [category, mods.filter(mod => mod.category === category.id)])
-  .filter(([, list]) => list.length > 0)
-  .map(([category, list]) => `### ${category.label}\n\n<table>\n${list.map(entry).join('\n')}\n</table>`)
-  .join('\n\n')
-
-const jump = categories
-  .filter(category => category.id !== 'all' && mods.some(mod => mod.category === category.id))
-  .map(category => `[${category.label}](#${category.label.toLowerCase().replace(/[^a-z0-9 -]/g, '').replaceAll(' ', '-')})`)
-  .join(' · ')
+  .map(category => `- [${category.label}](${SITE}?category=${category.id}): ${category.description}`)
+  .join('\n')
 
 const readme = `<h1 align="center">Claude Code Mods Gallery</h1>
 
-<p align="center"><b>See every mod before you install it.</b><br>${mods.length} hand-picked mods for Claude Code, each with a screenshot, what it does for you, what it costs and a weekly test run.</p>
+<p align="center"><b>See every mod before you install it.</b><br>Hand-picked mods for Claude Code, each with a screenshot, what it does for you, what it costs and a weekly test run.</p>
 
 <p align="center"><a href="${SITE}"><b>Browse the gallery →</b></a></p>
 
@@ -65,26 +44,15 @@ const readme = `<h1 align="center">Claude Code Mods Gallery</h1>
 ${rows.join('\n')}
 </table>
 
+## Browse by category
+
+${browse}
+
 ## Why this list
 
 - **You see it first.** Every mod has a real screenshot or recording, so you know what you get before you install anything.
 - **You know the cost.** Each mod says whether it can spend tokens, reach the network, run commands or write files.
 - **It keeps working.** CI runs each mod's tests every week on the latest Claude Code. A mod that fails leaves the gallery until it passes again.
-
-## Install a mod
-
-Every mod installs with two commands. Each mod's page has the exact ones to copy.
-
-\`\`\`bash
-claude plugin marketplace add <owner>/<repo>
-claude plugin install <mod>@<marketplace>
-\`\`\`
-
-## Browse by category
-
-${jump}
-
-${sections}
 
 ## How the testing works
 
@@ -121,4 +89,4 @@ Preview images belong to the mods' authors and come from their repositories unde
 `
 
 writeFileSync('README.md', readme)
-console.log(`${mods.length} mods in the README`)
+console.log(`${wall.length} mods on the wall`)
