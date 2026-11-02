@@ -3,7 +3,7 @@ import { setupTheme } from './theme.js'
 const CHECK = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 let CATEGORIES = []
-const state = { category: 'all', query: '', noTokens: false, noNetwork: false, sort: 'picks', active: null }
+const state = { category: 'all', query: '', noTokens: false, noNetwork: false, sort: 'stars', active: null }
 const canPlay = !matchMedia('(prefers-reduced-motion: reduce)').matches
 
 const $ = id => document.getElementById(id)
@@ -153,15 +153,15 @@ const syncUrl = () => {
   if (state.query) params.set('q', state.query)
   if (state.noTokens) params.set('tokens', 'no')
   if (state.noNetwork) params.set('network', 'no')
-  if (state.sort !== 'picks') params.set('sort', state.sort)
+  if (state.sort !== 'stars') params.set('sort', state.sort)
 
   const query = params.toString()
   history.replaceState(null, '', `${location.pathname}${query ? `?${query}` : ''}${location.hash}`)
 }
 
 const reset = () => {
-  Object.assign(state, { category: 'all', query: '', noTokens: false, noNetwork: false, sort: 'picks' })
-  $('sort').value = 'picks'
+  Object.assign(state, { category: 'all', query: '', noTokens: false, noNetwork: false, sort: 'stars' })
+  $('sort').value = 'stars'
   $('search').value = ''
   $('no-tokens').checked = false
   $('no-network').checked = false
@@ -347,7 +347,7 @@ const readUrl = () => {
   state.query = params.get('q') ?? ''
   state.noTokens = params.get('tokens') === 'no'
   state.noNetwork = params.get('network') === 'no'
-  state.sort = Object.hasOwn(SORTS, params.get('sort')) ? params.get('sort') : 'picks'
+  state.sort = Object.hasOwn(SORTS, params.get('sort')) ? params.get('sort') : 'stars'
   $('sort').value = state.sort
   $('search').value = state.query
   $('no-tokens').checked = state.noTokens
