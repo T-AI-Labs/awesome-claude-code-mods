@@ -4,7 +4,10 @@
   "type": "module",
   "scripts": {
     "check": "node scripts/check.mjs results/results.json",
-    "posters": "node scripts/posters.mjs"
+    "posters": "node scripts/posters.mjs",
+    "og": "node scripts/og.mjs",
+    "assemble": "node scripts/assemble.mjs results/results.json public",
+    "readme": "node scripts/readme.mjs results/results.json"
   },
   "devDependencies": {
     "sharp": "^0.33.5"

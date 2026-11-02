@@ -4,6 +4,8 @@ on:
   pull_request:
   push:
     branches: [main]
+    paths-ignore:
+      - README.md
   schedule:
     - cron: "17 5 * * 1"
   workflow_dispatch:
@@ -58,11 +60,12 @@ jobs:
           name: results
           path: results
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
       - name: Assemble the site
-        run: |
-          mkdir -p public/data
-          cp -r site/. public/
-          cp data/mods.json results/results.json public/data/
+        run: node scripts/assemble.mjs results/results.json public
 
       - uses: actions/upload-pages-artifact@v3
         with:

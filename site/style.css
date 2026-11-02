@@ -105,7 +105,7 @@ button, input { font: inherit; color: inherit; }
 main { max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
 
 .intro { padding: clamp(26px, 5vw, 46px) 0 clamp(18px, 3vw, 26px); max-width: 780px; }
-.intro h1 { margin: 0 0 10px; font-size: clamp(30px, 4.4vw, 46px); line-height: 1.08; letter-spacing: -0.028em; font-weight: 720; text-wrap: balance; }
+.intro h1 { margin: 0 0 8px; font-size: clamp(30px, 4.4vw, 46px); line-height: 1.08; letter-spacing: -0.028em; font-weight: 720; text-wrap: balance; }
 .intro p { margin: 0; font-size: clamp(16px, 1.6vw, 18px); color: var(--muted); }
 
 .browse { display: grid; gap: 12px; padding-bottom: 8px; }
@@ -269,6 +269,29 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
 
 .bottom { padding: 22px clamp(16px, 4vw, 40px) 34px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; }
 .bottom p { max-width: 1240px; margin: 0 auto; }
+.all-mods { max-width: 1240px; margin: 0 auto 18px; }
+.all-mods h2 { margin: 0 0 8px; font-size: 14px; color: var(--ink); }
+.all-mods ul { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0; padding: 0; list-style: none; }
+
+.mod-page { padding-bottom: 36px; }
+.crumb { margin: 18px 0 14px; font-size: 14px; color: var(--muted); }
+.mod-layout { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(320px, 1fr); gap: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.mod-page .stage { gap: 0; }
+.mod-page .stage-main { flex: none; }
+.mod-page .stage-main img { max-height: none; }
+.mod-page .panel { max-height: none; overflow: visible; }
+.mod-page .panel h1 { margin: 0; font-size: clamp(23px, 2.6vw, 30px); line-height: 1.18; letter-spacing: -0.022em; text-wrap: pretty; }
+.mod-page .panel h2 { margin: 0 0 7px; padding: 0; font-size: 13px; font-weight: 620; letter-spacing: 0; color: var(--muted); }
+.mod-page .section-head h2 { margin: 0; }
+.plain { margin: 0; font-size: 14.5px; }
+.quiet { color: var(--muted); }
+.related { margin-top: 26px; }
+.related h2 { margin: 0 0 12px; font-size: 20px; letter-spacing: -0.015em; }
+.related ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.related a { display: grid; gap: 3px; height: 100%; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; text-decoration: none; }
+.related a:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.related strong { font-family: var(--mono); font-size: 13.5px; font-weight: 600; }
+.related span { color: var(--muted); font-size: 14.5px; }
 
 .detail {
   width: min(1120px, calc(100vw - 32px));
@@ -321,6 +344,8 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
 .links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; color: var(--muted); }
 
 @media (max-width: 860px) {
+  .mod-layout { grid-template-columns: 1fr; }
+  .mod-page .stage-main img { max-height: 60dvh; }
   .detail { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; border: 0; border-radius: 0; }
   .detail[open] { display: block; overflow-y: auto; }
   .stage-main img { max-height: 42dvh; }

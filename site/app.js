@@ -1,15 +1,8 @@
-const CATEGORIES = [
-  { id: 'all', label: 'All mods' },
-  { id: 'cost', label: 'Spend fewer tokens' },
-  { id: 'overview', label: 'See what Claude does' },
-  { id: 'safety', label: 'Protect secrets' },
-  { id: 'read', label: 'Read answers better' },
-  { id: 'flow', label: 'Work faster' },
-  { id: 'fun', label: 'Pass the time' },
-]
+import { setupTheme } from './theme.js'
 
 const CHECK = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
+let CATEGORIES = []
 const state = { category: 'all', query: '', noTokens: false, noNetwork: false, active: null }
 const canPlay = !matchMedia('(prefers-reduced-motion: reduce)').matches
 
@@ -92,7 +85,15 @@ const card = mod => {
       recording && canPlay ? el('span', { class: 'play', 'aria-hidden': 'true' }, '▶ Plays on hover') : null,
     ),
     el('div', { class: 'body' },
-      el('h3', { class: 'tagline' }, el('a', { class: 'open', href: `#${mod.id}` }, mod.tagline)),
+      el('h3', { class: 'tagline' }, el('a', {
+        class: 'open',
+        href: `mods/${mod.id}/`,
+        onclick: event => {
+          if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return
+          event.preventDefault()
+          location.hash = mod.id
+        },
+      }, mod.tagline)),
       el('div', { class: 'byline' },
         el('code', {}, mod.name),
         el('span', {}, `by ${authorOf(mod)}`),
@@ -276,6 +277,7 @@ const openDetail = mod => {
         el('pre', { class: 'install' }, installOf(mod)),
       ),
       el('div', { class: 'links' },
+        el('a', { href: `mods/${mod.id}/` }, 'Full page'),
         el('a', { href: sourceOf(mod), rel: 'noopener', target: '_blank' }, 'Source at the tested commit'),
         el('a', { href: `https://github.com/${mod.repo}`, rel: 'noopener', target: '_blank' }, 'Repository'),
         el('span', {}, `${mod.license} license`),
@@ -314,36 +316,16 @@ const readUrl = () => {
   $('no-network').checked = state.noNetwork
 }
 
-const setupTheme = () => {
-  const stored = (() => {
-    try {
-      return localStorage.getItem('theme')
-    } catch {
-      return null
-    }
-  })()
-
-  if (stored !== null) document.documentElement.dataset.theme = stored
-
-  $('theme').addEventListener('click', () => {
-    const current = document.documentElement.dataset.theme
-      ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-    const next = current === 'dark' ? 'light' : 'dark'
-    document.documentElement.dataset.theme = next
-
-    try {
-      localStorage.setItem('theme', next)
-    } catch {}
-  })
-}
-
 setupTheme()
-readUrl()
 
-const [catalog, results] = await Promise.all([
+const [catalog, results, categories] = await Promise.all([
   fetch('data/mods.json').then(response => response.json()),
   fetch('data/results.json').then(response => response.json()),
+  fetch('data/categories.json').then(response => response.json()),
 ])
+
+CATEGORIES = categories
+readUrl()
 
 // A mod whose validation or tests fail leaves the gallery until it passes again.
 mods = catalog
