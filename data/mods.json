@@ -657,5 +657,1210 @@
       "https://raw.githubusercontent.com/uppinote20/claude-pets/1f8027d8b211b12027a8d89e659c85b212e0c5f6/assets/stages.svg",
       "https://raw.githubusercontent.com/uppinote20/claude-pets/1f8027d8b211b12027a8d89e659c85b212e0c5f6/assets/run.gif"
     ]
+  },
+  {
+    "id": "usage-quota",
+    "name": "usage-quota",
+    "repo": "anantraghunath/claude-code-usage-quota-mod",
+    "path": ".",
+    "commit": "5444bb3fdf523e561f397355055c11dc95224ace",
+    "marketplace": "claude-code-usage-quota-mod",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Know your limits before they hit you, with a live forecast.",
+    "where": "Above the prompt",
+    "benefits": [
+      "5-hour and weekly usage with a forecast against the resets",
+      "Context window usage",
+      "One-click Compact and per-session auto compact"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/anantraghunath/claude-code-usage-quota-mod/5444bb3fdf523e561f397355055c11dc95224ace/docs/expanded-desktop.png",
+      "https://raw.githubusercontent.com/anantraghunath/claude-code-usage-quota-mod/5444bb3fdf523e561f397355055c11dc95224ace/docs/collapsed-desktop.png",
+      "https://raw.githubusercontent.com/anantraghunath/claude-code-usage-quota-mod/5444bb3fdf523e561f397355055c11dc95224ace/docs/run-out-expanded-v2.png"
+    ]
+  },
+  {
+    "id": "burn-meter",
+    "name": "burn-meter",
+    "repo": "OneWave-AI/claude-code-mods",
+    "path": "burn-meter",
+    "commit": "e6da26ca36a88eec3be25605d30fa20f2c1c0cec",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Watch your session cost tick up like an odometer.",
+    "where": "Above the prompt",
+    "benefits": [
+      "A live cost odometer with a burning fuse",
+      "Real-world comparisons for what you spent",
+      "Alerts when you cross a threshold"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/e6da26ca36a88eec3be25605d30fa20f2c1c0cec/screenshots/burn-meter.png"
+    ]
+  },
+  {
+    "id": "nextcost",
+    "name": "nextcost",
+    "repo": "HMarzban/claude-mod",
+    "path": "plugins/nextcost",
+    "commit": "ed2048993c82f48375c0f3c754b8fe4893332213",
+    "marketplace": "hossein-mods",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "See what your next message will cost before you send it.",
+    "where": "Above the prompt",
+    "benefits": [
+      "A prompt-cache countdown and the re-warm price",
+      "Session cost and context",
+      "Your 5-hour and 7-day limits"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/HMarzban/nextcost/main/docs/band-anatomy.png",
+      "https://raw.githubusercontent.com/HMarzban/nextcost/main/docs/band-expanded.png",
+      "https://raw.githubusercontent.com/HMarzban/nextcost/main/docs/band-layouts-light.png"
+    ]
+  },
+  {
+    "id": "wavy-usage",
+    "name": "wavy-usage",
+    "repo": "BatuhanCakmakk/wavy-usage",
+    "path": ".",
+    "commit": "d8f5aaed4f9fb4ad143f6957b1346c8dee0815c9",
+    "marketplace": "wavy-usage",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "See your limits as liquid-filled rings.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Rings for the 5-hour and 7-day windows, context and cache lifetime",
+      "A fighter jet that shows the model's effort",
+      "A pane of recent turns and their cost"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/BatuhanCakmakk/wavy-usage/d8f5aaed4f9fb4ad143f6957b1346c8dee0815c9/docs/band.png",
+      "https://raw.githubusercontent.com/BatuhanCakmakk/wavy-usage/d8f5aaed4f9fb4ad143f6957b1346c8dee0815c9/docs/pane.png",
+      "https://raw.githubusercontent.com/BatuhanCakmakk/wavy-usage/d8f5aaed4f9fb4ad143f6957b1346c8dee0815c9/docs/band-dark.png"
+    ]
+  },
+  {
+    "id": "usage-bars",
+    "name": "usage-bars",
+    "repo": "pepperonas/usage-bars",
+    "path": ".",
+    "commit": "2c7169782aeabef657b2e91750e65511d6b46b9c",
+    "marketplace": "pepperonas",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Turn your usage limits into animated bars.",
+    "where": "Under the prompt",
+    "benefits": [
+      "Percent, reset countdown, pace mark and projection",
+      "The change per answer",
+      "Styles like Pac-Man, beer, tank, battery and hourglass"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/pepperonas/usage-bars/2c7169782aeabef657b2e91750e65511d6b46b9c/docs/social.png",
+      "https://raw.githubusercontent.com/pepperonas/usage-bars/2c7169782aeabef657b2e91750e65511d6b46b9c/docs/demo.gif",
+      "https://raw.githubusercontent.com/pepperonas/usage-bars/2c7169782aeabef657b2e91750e65511d6b46b9c/docs/hero.png"
+    ]
+  },
+  {
+    "id": "tokensaver",
+    "name": "tokensaver",
+    "repo": "AGregDev/claude-tokensaver",
+    "path": ".",
+    "commit": "3f43ef312cf276bfeb6913fe8344bc687ac67282",
+    "marketplace": "claude-tokensaver",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Trim noisy output before it fills your context.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Trims noisy tool output and pasted logs",
+      "Tells you when to compact and does it in one click",
+      "Warns when the cache goes cold and routes subagents to cheaper models"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/AGregDev/claude-tokensaver/3f43ef312cf276bfeb6913fe8344bc687ac67282/docs/clawd-pane.svg",
+      "https://raw.githubusercontent.com/AGregDev/claude-tokensaver/3f43ef312cf276bfeb6913fe8344bc687ac67282/docs/clawd-moods.svg",
+      "https://raw.githubusercontent.com/AGregDev/claude-tokensaver/3f43ef312cf276bfeb6913fe8344bc687ac67282/docs/clawd-band.svg"
+    ]
+  },
+  {
+    "id": "contextsaver",
+    "name": "contextsaver",
+    "repo": "AlmogBaku/ContextSaver",
+    "path": ".",
+    "commit": "0f83acb7a45f708f654997e686f1307d4538965f",
+    "marketplace": "contextsaver",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Find the habits that waste your usage, and fix them in one click.",
+    "where": "In the transcript",
+    "benefits": [
+      "Diagnoses wrong processes, workflows and habits",
+      "Names the lean alternative with its measured cost",
+      "Fires on plan acceptance, workflow launches and pace complaints"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/AlmogBaku/ContextSaver/0f83acb7a45f708f654997e686f1307d4538965f/docs/screenshot.png"
+    ]
+  },
+  {
+    "id": "limits-meter",
+    "name": "limits-meter",
+    "repo": "ice-lfernandes/claude-code-mods",
+    "path": "limits-meter",
+    "commit": "82c3ab9c7fa0e92828cc51205b906a9a9b08b6b0",
+    "marketplace": "lfernandes-mods",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Keep limits, cache and context in one place.",
+    "where": "Above the prompt",
+    "benefits": [
+      "5-hour and weekly windows with reset times",
+      "A prompt-cache countdown with an opt-in keep-warm",
+      "Context split by group: system, MCP and messages"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ice-lfernandes/claude-code-mods/82c3ab9c7fa0e92828cc51205b906a9a9b08b6b0/screenshots/limits-meter.svg",
+      "https://raw.githubusercontent.com/ice-lfernandes/claude-code-mods/82c3ab9c7fa0e92828cc51205b906a9a9b08b6b0/screenshots/limits-meter-cache.gif"
+    ]
+  },
+  {
+    "id": "statuspane",
+    "name": "statuspane",
+    "repo": "xuanji86/claude-statuspane",
+    "path": ".",
+    "commit": "e183da95628d8a378afce9711d02785165dd43d2",
+    "marketplace": "claude-statuspane",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Float a status card with everything that matters above your prompt.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Model, effort, context, limits and cost",
+      "Directory, branch, GitHub CI and deploys",
+      "Clickable settings and a progress row other tools can feed"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/xuanji86/claude-statuspane/e183da95628d8a378afce9711d02785165dd43d2/assets/card.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-statuspane/e183da95628d8a378afce9711d02785165dd43d2/assets/settings.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-statuspane/e183da95628d8a378afce9711d02785165dd43d2/assets/hidden.svg"
+    ]
+  },
+  {
+    "id": "agent-tree",
+    "name": "agent-tree",
+    "repo": "MikeGT4/agent-tree",
+    "path": ".",
+    "commit": "268705405e02546e9f0376248247fe25ac986429",
+    "marketplace": "agent-tree",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "See every subagent live, and steer it mid-task.",
+    "where": "Side pane",
+    "benefits": [
+      "A live tree of the session's agents",
+      "Stop a subagent or send it new instructions",
+      "Switch its model and effort"
+    ],
+    "images": [
+      "https://github.com/MikeGT4/agent-tree/releases/download/v0.5.4/readme-agent-tree-4.gif"
+    ]
+  },
+  {
+    "id": "agentpane",
+    "name": "agentpane",
+    "repo": "xuanji86/claude-agentpane",
+    "path": ".",
+    "commit": "745ca30af88d53dbff742ef96cebc55eb30690e4",
+    "marketplace": "claude-agentpane",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "See what each subagent is doing and what it costs.",
+    "where": "Side pane",
+    "benefits": [
+      "Lists the subagents a session runs",
+      "What each is doing and its token cost",
+      "Each one's conversation a click away"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/xuanji86/claude-agentpane/745ca30af88d53dbff742ef96cebc55eb30690e4/assets/pane.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-agentpane/745ca30af88d53dbff742ef96cebc55eb30690e4/assets/conversation.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-agentpane/745ca30af88d53dbff742ef96cebc55eb30690e4/assets/tab.svg"
+    ]
+  },
+  {
+    "id": "agent-watch",
+    "name": "agent-watch",
+    "repo": "ice-lfernandes/claude-code-mods",
+    "path": "agent-watch",
+    "commit": "82c3ab9c7fa0e92828cc51205b906a9a9b08b6b0",
+    "marketplace": "lfernandes-mods",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Get told when a subagent stalls.",
+    "where": "Above the prompt",
+    "benefits": [
+      "A card per agent with its mascot, step and tokens",
+      "A toast when one stalls",
+      "A summary naming the heaviest agent"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ice-lfernandes/claude-code-mods/82c3ab9c7fa0e92828cc51205b906a9a9b08b6b0/screenshots/agent-watch.svg"
+    ]
+  },
+  {
+    "id": "session-radar",
+    "name": "session-radar",
+    "repo": "ibrahimkobeissy/claude-mods",
+    "path": "mods/session-radar",
+    "commit": "fb8cc43bae05e913a02fdc9c3cb95ffb83aff114",
+    "marketplace": "claude-mods",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Keep long sessions under control from one sidebar.",
+    "where": "Side pane",
+    "benefits": [
+      "Usage limits and context",
+      "Agents and background shells",
+      "Progress at a glance"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ibrahimkobeissy/claude-mods/fb8cc43bae05e913a02fdc9c3cb95ffb83aff114/mods/session-radar/assets/overview.png",
+      "https://raw.githubusercontent.com/ibrahimkobeissy/claude-mods/fb8cc43bae05e913a02fdc9c3cb95ffb83aff114/mods/session-radar/assets/shell.png"
+    ]
+  },
+  {
+    "id": "tool-radar",
+    "name": "tool-radar",
+    "repo": "Singh-AP/awesome-claude-mods",
+    "path": "mods/awareness/tool-radar",
+    "commit": "34c3959f3f137f295eba2add43fb1866ce3d5c43",
+    "marketplace": "awesome-claude-mods",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Watch every tool call as it happens.",
+    "where": "Side pane",
+    "benefits": [
+      "Status, arguments, duration and failures per call",
+      "A summary with /radar summary"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/Singh-AP/awesome-claude-mods/34c3959f3f137f295eba2add43fb1866ce3d5c43/assets/screens/tool-radar.svg"
+    ]
+  },
+  {
+    "id": "gh-status",
+    "name": "gh-status",
+    "repo": "oborchers/claude-gh-status",
+    "path": ".",
+    "commit": "eb5b81b2e10868a079c7bb3e7664f530810d14ed",
+    "marketplace": "claude-gh-status",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Follow your branch's pull request without leaving Claude Code.",
+    "where": "Side pane",
+    "benefits": [
+      "Checks, reviews, threads and mergeability",
+      "Merge queue status",
+      "Merge actions that ask you to confirm"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/oborchers/claude-gh-status/eb5b81b2e10868a079c7bb3e7664f530810d14ed/docs/images/tab-view.png",
+      "https://raw.githubusercontent.com/oborchers/claude-gh-status/eb5b81b2e10868a079c7bb3e7664f530810d14ed/docs/images/compact-view.png",
+      "https://raw.githubusercontent.com/oborchers/claude-gh-status/eb5b81b2e10868a079c7bb3e7664f530810d14ed/docs/images/confirm.png"
+    ]
+  },
+  {
+    "id": "pr-watch",
+    "name": "pr-watch",
+    "repo": "ElirazKed/claude-code-pr-watch",
+    "path": ".",
+    "commit": "53dec91d6fdc7dc5f50e39cebe128416dc24054f",
+    "marketplace": "claude-code-pr-watch",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Track every pull request a session touches.",
+    "where": "Side pane",
+    "benefits": [
+      "CI, review, conflicts and merge state",
+      "One shared poller for every session on the machine"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ElirazKed/claude-code-pr-watch/53dec91d6fdc7dc5f50e39cebe128416dc24054f/docs/screenshot.png",
+      "https://raw.githubusercontent.com/ElirazKed/claude-code-pr-watch/53dec91d6fdc7dc5f50e39cebe128416dc24054f/docs/prw.png"
+    ]
+  },
+  {
+    "id": "test-hud",
+    "name": "test-hud",
+    "repo": "ice-lfernandes/claude-code-mods",
+    "path": "test-hud",
+    "commit": "82c3ab9c7fa0e92828cc51205b906a9a9b08b6b0",
+    "marketplace": "lfernandes-mods",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "See your test runs at a glance.",
+    "where": "Under the prompt",
+    "benefits": [
+      "Passing over total, colored by the result",
+      "A sparkline of failures across runs",
+      "Failing tests grouped by file, and toasts when the suite turns green"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ice-lfernandes/claude-code-mods/82c3ab9c7fa0e92828cc51205b906a9a9b08b6b0/screenshots/test-hud.svg"
+    ]
+  },
+  {
+    "id": "hud",
+    "name": "hud",
+    "repo": "hoobnn/hoobnn-agent-mods",
+    "path": "claude-code/hud",
+    "commit": "a01bdaa7acc06f3f0ab8c11e0c07a9c2446f3603",
+    "marketplace": "hoobnn-agent-mods",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Get a full heads-up display with switchable themes.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Model, project, git, context, usage, tools, agents and todos",
+      "Alerts, budget and history",
+      "A task summary and a detail pane"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/hoobnn/hoobnn-agent-mods/a01bdaa7acc06f3f0ab8c11e0c07a9c2446f3603/claude-code/hud/assets/themes/neon.png"
+    ]
+  },
+  {
+    "id": "devtools",
+    "name": "devtools",
+    "repo": "NMenzel/claude-devtools-mod",
+    "path": ".",
+    "commit": "5015f53869ef2a7ff70796503e8fb9db7e4caaed",
+    "marketplace": "claude-devtools-mod",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Debug tool calls with breakpoints.",
+    "where": "Side pane",
+    "benefits": [
+      "Pause, continue, reject and step through calls",
+      "A timeline and an inspector",
+      "See who refused each call and why"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/NMenzel/claude-devtools-mod/5015f53869ef2a7ff70796503e8fb9db7e4caaed/docs/media/demo.gif"
+    ]
+  },
+  {
+    "id": "change-journal",
+    "name": "change-journal",
+    "repo": "theonly1me/claude-code-mods",
+    "path": "plugins/change-journal",
+    "commit": "6d69bf8871bb088c3bdf5b5526b03dce633cdb88",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Follow every change Claude makes on a live page.",
+    "where": "Browser page",
+    "benefits": [
+      "Diffs with the reason for each edit",
+      "Checks that ran",
+      "Before and after behavior flows"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/theonly1me/claude-code-mods/6d69bf8871bb088c3bdf5b5526b03dce633cdb88/plugins/change-journal/assets/preview.png",
+      "https://raw.githubusercontent.com/theonly1me/claude-code-mods/6d69bf8871bb088c3bdf5b5526b03dce633cdb88/plugins/change-journal/assets/pane.png"
+    ]
+  },
+  {
+    "id": "installguard",
+    "name": "installguard",
+    "repo": "griches/installguard",
+    "path": ".",
+    "commit": "4a3785dc986a16ba36fefd9c005addea7ad25551",
+    "marketplace": "installguard",
+    "license": "MIT",
+    "category": "safety",
+    "tagline": "Stop made-up and typosquatted packages before they install.",
+    "where": "Dialog",
+    "benefits": [
+      "Looks up every new package before it installs",
+      "Holds made-up names, typosquats and days-old releases",
+      "Holds curl-into-shell for your answer"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/griches/installguard/4a3785dc986a16ba36fefd9c005addea7ad25551/docs/installguard.gif",
+      "https://raw.githubusercontent.com/griches/installguard/4a3785dc986a16ba36fefd9c005addea7ad25551/docs/held.png"
+    ]
+  },
+  {
+    "id": "launch-codes",
+    "name": "launch-codes",
+    "repo": "OneWave-AI/claude-code-mods",
+    "path": "launch-codes",
+    "commit": "e6da26ca36a88eec3be25605d30fa20f2c1c0cec",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "safety",
+    "tagline": "Make dangerous commands wait for your launch code.",
+    "where": "Side pane",
+    "benefits": [
+      "A red alert pane and a siren for dangerous Bash commands",
+      "A code to arm and a LAUNCH to fire"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/e6da26ca36a88eec3be25605d30fa20f2c1c0cec/screenshots/launch-codes.png"
+    ]
+  },
+  {
+    "id": "allowlist-coach",
+    "name": "allowlist-coach",
+    "repo": "ice-lfernandes/claude-code-mods",
+    "path": "allowlist-coach",
+    "commit": "82c3ab9c7fa0e92828cc51205b906a9a9b08b6b0",
+    "marketplace": "lfernandes-mods",
+    "license": "MIT",
+    "category": "safety",
+    "tagline": "Get fewer permission prompts, on rules you approve.",
+    "where": "Dialog",
+    "benefits": [
+      "Counts permission dialogs per rule",
+      "Offers to add a rule after repeated approvals",
+      "Asks before it writes"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ice-lfernandes/claude-code-mods/82c3ab9c7fa0e92828cc51205b906a9a9b08b6b0/screenshots/allowlist-coach.svg"
+    ]
+  },
+  {
+    "id": "cc-split-diff-view",
+    "name": "cc-split-diff-view",
+    "repo": "neteye-platform/cc-split-diff-view",
+    "path": ".",
+    "commit": "b353ebb66d20ea2b3cc64039193f354e6f4759e2",
+    "marketplace": "neteye-platform",
+    "license": "Apache-2.0",
+    "category": "read",
+    "tagline": "Read diffs side by side, right in the terminal.",
+    "where": "In the transcript",
+    "benefits": [
+      "Removed lines on the left, added lines on the right",
+      "Claude Code's own diff colors",
+      "/diffsplit reviews all uncommitted changes the same way"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/neteye-platform/cc-split-diff-view/b353ebb66d20ea2b3cc64039193f354e6f4759e2/docs/split-diff-view.png",
+      "https://raw.githubusercontent.com/neteye-platform/cc-split-diff-view/b353ebb66d20ea2b3cc64039193f354e6f4759e2/docs/diffsplit-pane.png"
+    ]
+  },
+  {
+    "id": "glass",
+    "name": "glass",
+    "repo": "rashedInt32/glass",
+    "path": ".",
+    "commit": "f1fe2d02b27e7812394daf4e8c0fa99c04a1b0e7",
+    "marketplace": "glass",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "Give the terminal a desktop-app look.",
+    "where": "In the transcript",
+    "benefits": [
+      "Colored shell commands and a Bottom line card",
+      "Content-fit code cards and borderless tables",
+      "Painted tool rows and turn headers"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/rashedInt32/glass/f1fe2d02b27e7812394daf4e8c0fa99c04a1b0e7/docs/shots/tarnish.png",
+      "https://raw.githubusercontent.com/rashedInt32/glass/f1fe2d02b27e7812394daf4e8c0fa99c04a1b0e7/docs/shots/overprint.png",
+      "https://raw.githubusercontent.com/rashedInt32/glass/f1fe2d02b27e7812394daf4e8c0fa99c04a1b0e7/docs/shots/ironbow.png"
+    ]
+  },
+  {
+    "id": "looks",
+    "name": "looks",
+    "repo": "theonly1me/claude-code-mods",
+    "path": "plugins/looks",
+    "commit": "6d69bf8871bb088c3bdf5b5526b03dce633cdb88",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "Restyle Claude Code with a single command.",
+    "where": "Theme",
+    "benefits": [
+      "Retro CRT, Punk, Synthwave and Zen paper themes via /theme",
+      "Tidier tool calls",
+      "Optional one-line tool rows and a centered reading width"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/theonly1me/claude-code-mods/6d69bf8871bb088c3bdf5b5526b03dce633cdb88/plugins/looks/assets/preview.png",
+      "https://raw.githubusercontent.com/theonly1me/claude-code-mods/6d69bf8871bb088c3bdf5b5526b03dce633cdb88/plugins/looks/assets/preview.png",
+      "https://raw.githubusercontent.com/theonly1me/claude-code-mods/6d69bf8871bb088c3bdf5b5526b03dce633cdb88/plugins/looks/assets/tool-rows.png"
+    ]
+  },
+  {
+    "id": "peek",
+    "name": "peek",
+    "repo": "alex2481kobe/claude-mods",
+    "path": "plugins/peek",
+    "commit": "d3a38db047eb6db9c998febae43d944f3b99b3f8",
+    "marketplace": "claude-mods",
+    "license": "Apache-2.0",
+    "category": "read",
+    "tagline": "See the images Claude makes or finds, right in the terminal.",
+    "where": "In the transcript",
+    "benefits": [
+      "Real pixels in kitty and Ghostty",
+      "A colored-block preview everywhere else"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/alex2481kobe/claude-mods/d3a38db047eb6db9c998febae43d944f3b99b3f8/plugins/peek/media/ghostty-picture.png",
+      "https://raw.githubusercontent.com/alex2481kobe/claude-mods/d3a38db047eb6db9c998febae43d944f3b99b3f8/plugins/peek/media/blocky-preview.png"
+    ]
+  },
+  {
+    "id": "latex",
+    "name": "latex",
+    "repo": "zaahiral/claude-latex",
+    "path": ".",
+    "commit": "606d897388bc001587fc7a4fd6e6e10a190bba49",
+    "marketplace": "claude-latex",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "Render math and diagrams beautifully in the desktop app.",
+    "where": "In the transcript",
+    "benefits": [
+      "TeX math, TikZ diagrams and LaTeX blocks",
+      "Ten LaTeX fonts",
+      "Every compile runs sandboxed"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/zaahiral/claude-latex/606d897388bc001587fc7a4fd6e6e10a190bba49/assets/demo-math.png",
+      "https://raw.githubusercontent.com/zaahiral/claude-latex/606d897388bc001587fc7a4fd6e6e10a190bba49/assets/demo-diagrams.png",
+      "https://raw.githubusercontent.com/zaahiral/claude-latex/606d897388bc001587fc7a4fd6e6e10a190bba49/assets/fonts.png"
+    ]
+  },
+  {
+    "id": "mdview",
+    "name": "mdview",
+    "repo": "xuanji86/claude-mdview",
+    "path": ".",
+    "commit": "d3050cd6046470e644106d0811ea247b3d2fde22",
+    "marketplace": "claude-mdview",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "Click a Markdown path to read it rendered beside your session.",
+    "where": "Side pane",
+    "benefits": [
+      "Rendered Markdown with pictures",
+      "Point at any block to have Claude edit it"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/xuanji86/claude-mdview/d3050cd6046470e644106d0811ea247b3d2fde22/assets/pane.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-mdview/d3050cd6046470e644106d0811ea247b3d2fde22/assets/edit.svg"
+    ]
+  },
+  {
+    "id": "figures",
+    "name": "figures",
+    "repo": "natsukium/claude-code-figures-plugin",
+    "path": ".",
+    "commit": "f18c6bb39e0c0f104c3c0a956927e56e3255eee7",
+    "marketplace": "figures",
+    "license": "Apache-2.0",
+    "category": "read",
+    "tagline": "See diagrams and math inline in your terminal.",
+    "where": "In the transcript",
+    "benefits": [
+      "Diagrams, LaTeX math and tool-result images",
+      "Works in kitty-graphics terminals"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/natsukium/claude-code-figures-plugin/f18c6bb39e0c0f104c3c0a956927e56e3255eee7/docs/demo.png",
+      "https://raw.githubusercontent.com/natsukium/claude-code-figures-plugin/f18c6bb39e0c0f104c3c0a956927e56e3255eee7/docs/figures-pane.png"
+    ]
+  },
+  {
+    "id": "rtl-terminal",
+    "name": "rtl-terminal",
+    "repo": "MohammedSaud404/rtl-terminal",
+    "path": ".",
+    "commit": "c0572309deeec3695c0d82e5eae0d54459422373",
+    "marketplace": "rtl-terminal",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "Read Arabic, Hebrew and Persian the right way round.",
+    "where": "In the transcript",
+    "benefits": [
+      "Right-to-left layout in the Claude Code terminal",
+      "Covers Arabic, Hebrew, Persian, Urdu and every RTL language"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/MohammedSaud404/rtl-terminal/c0572309deeec3695c0d82e5eae0d54459422373/docs/images/hero.png",
+      "https://raw.githubusercontent.com/MohammedSaud404/rtl-terminal/c0572309deeec3695c0d82e5eae0d54459422373/docs/images/ar.png",
+      "https://raw.githubusercontent.com/MohammedSaud404/rtl-terminal/c0572309deeec3695c0d82e5eae0d54459422373/docs/images/he.png"
+    ]
+  },
+  {
+    "id": "paste-view",
+    "name": "paste-view",
+    "repo": "Amorfx/claude-paste-view",
+    "path": ".",
+    "commit": "63c541d7e92f1d6157af919b62e3a2067bd7ddf5",
+    "marketplace": "claude-paste-view",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "See what you paste, images and long text alike.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Image thumbnails above the prompt",
+      "Long-text previews instead of bare tags"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/Amorfx/claude-paste-view/63c541d7e92f1d6157af919b62e3a2067bd7ddf5/docs/preview.png",
+      "https://raw.githubusercontent.com/Amorfx/claude-paste-view/63c541d7e92f1d6157af919b62e3a2067bd7ddf5/docs/pane.png"
+    ]
+  },
+  {
+    "id": "task-board",
+    "name": "task-board",
+    "repo": "MarcoCarnevali/claude-code-mods",
+    "path": "task-board",
+    "commit": "a3e528dd00ced34a46973ab89398cc52168191b9",
+    "marketplace": "marco-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Get a To do, Doing, Done board that Claude fills in for you.",
+    "where": "Side pane",
+    "benefits": [
+      "Filled by Claude's to-do list, approved plans and a board tool",
+      "Add your own cards"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/MarcoCarnevali/claude-code-mods/a3e528dd00ced34a46973ab89398cc52168191b9/task-board/docs/board.png"
+    ]
+  },
+  {
+    "id": "github-issues",
+    "name": "github-issues",
+    "repo": "MarcoCarnevali/claude-code-mods",
+    "path": "github-issues",
+    "commit": "a3e528dd00ced34a46973ab89398cc52168191b9",
+    "marketplace": "marco-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Pick a GitHub issue and have Claude work on it in one click.",
+    "where": "Side pane",
+    "benefits": [
+      "Lists the repository's GitHub issues",
+      "One click to hand an issue to Claude"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/MarcoCarnevali/claude-code-mods/a3e528dd00ced34a46973ab89398cc52168191b9/github-issues/docs/issues.png",
+      "https://raw.githubusercontent.com/MarcoCarnevali/claude-code-mods/a3e528dd00ced34a46973ab89398cc52168191b9/github-issues/docs/picker.png"
+    ]
+  },
+  {
+    "id": "diff-review",
+    "name": "diff-review",
+    "repo": "nicolas-codemate/claude-code-mods",
+    "path": "plugins/diff-review",
+    "commit": "588b30b985a094a90f9f943c9a6c39ce05b3dd17",
+    "marketplace": "codemate-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Review changes and ask Claude about any line.",
+    "where": "Side pane",
+    "benefits": [
+      "Review uncommitted changes, the pull request or one commit at a time",
+      "Read and settle GitHub review threads",
+      "All from the keyboard"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/nicolas-codemate/claude-code-mods/588b30b985a094a90f9f943c9a6c39ce05b3dd17/plugins/diff-review/docs/media/ask-claude.gif",
+      "https://raw.githubusercontent.com/nicolas-codemate/claude-code-mods/588b30b985a094a90f9f943c9a6c39ce05b3dd17/plugins/diff-review/docs/media/uncommitted.png",
+      "https://raw.githubusercontent.com/nicolas-codemate/claude-code-mods/588b30b985a094a90f9f943c9a6c39ce05b3dd17/plugins/diff-review/docs/media/overview.png"
+    ]
+  },
+  {
+    "id": "pinboard",
+    "name": "pinboard",
+    "repo": "sirkitree/pinboard",
+    "path": ".",
+    "commit": "94a1e3f9a22999fde3667b91361951a09c9d232b",
+    "marketplace": "pinboard",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Keep decisions, tasks and links in a sidebar.",
+    "where": "Side pane",
+    "benefits": [
+      "Open decisions, the task list and the links Claude creates",
+      "Updated through its own tool"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sirkitree/pinboard/94a1e3f9a22999fde3667b91361951a09c9d232b/docs/board-in-progress.png"
+    ]
+  },
+  {
+    "id": "loop-guard",
+    "name": "loop-guard",
+    "repo": "arasovic/claude-code-mods",
+    "path": "loop-guard",
+    "commit": "3c3f25ee3a12b982fd63ee858297baab9385dd33",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Stop Claude from repeating the same failing call.",
+    "where": "In the background",
+    "benefits": [
+      "Spots the same call failing twice with the same error",
+      "Tells the model to change approach"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/arasovic/claude-code-mods/3c3f25ee3a12b982fd63ee858297baab9385dd33/docs/loop-guard.png"
+    ]
+  },
+  {
+    "id": "waiting-bell",
+    "name": "waiting-bell",
+    "repo": "ibrahimkobeissy/claude-mods",
+    "path": "mods/waiting-bell",
+    "commit": "fb8cc43bae05e913a02fdc9c3cb95ffb83aff114",
+    "marketplace": "claude-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Never miss when Claude is waiting for you.",
+    "where": "Above the prompt",
+    "benefits": [
+      "A bell and a banner when Claude is blocked",
+      "Repeats every 5 minutes until you answer"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ibrahimkobeissy/claude-mods/fb8cc43bae05e913a02fdc9c3cb95ffb83aff114/mods/waiting-bell/assets/preview.png"
+    ]
+  },
+  {
+    "id": "topic-guard",
+    "name": "topic-guard",
+    "repo": "dougcunha/claude-mods",
+    "path": "topic-guard",
+    "commit": "8af301c7cd8ea4c532cb8dd53ab4eaf899a8d452",
+    "marketplace": "claude-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Keep new topics out of the wrong session.",
+    "where": "Above the prompt",
+    "benefits": [
+      "A small model checks whether a prompt fits the session",
+      "Holds a new topic in the prompt box",
+      "Enter keeps it here, or start a new session"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/dougcunha/claude-mods/8af301c7cd8ea4c532cb8dd53ab4eaf899a8d452/topic-guard/images/band.png"
+    ]
+  },
+  {
+    "id": "decision-lens",
+    "name": "decision-lens",
+    "repo": "theonly1me/claude-code-mods",
+    "path": "plugins/decision-lens",
+    "commit": "6d69bf8871bb088c3bdf5b5526b03dce633cdb88",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "See the decisions Claude made, and steer the next ones.",
+    "where": "Side pane",
+    "benefits": [
+      "The decisions of each turn and why they were made",
+      "Keep and avoid rules for future turns"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/theonly1me/claude-code-mods/6d69bf8871bb088c3bdf5b5526b03dce633cdb88/plugins/decision-lens/assets/preview.png"
+    ]
+  },
+  {
+    "id": "recap-plus",
+    "name": "recap-plus",
+    "repo": "skanehira/claude-recap-plus",
+    "path": ".",
+    "commit": "7fd57603fd81de0b1a8a2aba1cffbd5d4c11d9e5",
+    "marketplace": "claude-recap-plus",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Come back to a session and know where it stands.",
+    "where": "Above the prompt",
+    "benefits": [
+      "A summary of what the session is for and where it stands",
+      "/recap-plus adds what was decided, what waits on you and what comes next"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/skanehira/claude-recap-plus/7fd57603fd81de0b1a8a2aba1cffbd5d4c11d9e5/images/README/369763f2.png"
+    ]
+  },
+  {
+    "id": "workface",
+    "name": "workface",
+    "repo": "scodge-24/workface",
+    "path": ".",
+    "commit": "6dc775e699d4508aaf9e18c6c11b4e800744866e",
+    "marketplace": "workface",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Keep working notes through every compaction.",
+    "where": "Side pane",
+    "benefits": [
+      "Briefs the summarizer and re-attaches the notes after the summary",
+      "A panel to read and steer the notes"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/scodge-24/workface/6dc775e699d4508aaf9e18c6c11b4e800744866e/assets/hero.svg",
+      "https://raw.githubusercontent.com/scodge-24/workface/6dc775e699d4508aaf9e18c6c11b4e800744866e/assets/panel.svg"
+    ]
+  },
+  {
+    "id": "noctis",
+    "name": "noctis",
+    "repo": "synex1437/noctis",
+    "path": ".",
+    "commit": "37d68d8f3a245be127c06ca5348862cafea2cdf7",
+    "marketplace": "noctis",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Run long jobs overnight without hitting your limits.",
+    "where": "In the background",
+    "benefits": [
+      "Pauses just before the 5-hour or weekly limit",
+      "Resumes the same session after the reset",
+      "Works through a list of jobs with /noctis:start"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/synex1437/noctis/37d68d8f3a245be127c06ca5348862cafea2cdf7/docs/before-after.svg",
+      "https://raw.githubusercontent.com/synex1437/noctis/37d68d8f3a245be127c06ca5348862cafea2cdf7/docs/demo.svg"
+    ]
+  },
+  {
+    "id": "nanoflow",
+    "name": "nanoflow",
+    "repo": "nanosite-ai/nanoflow",
+    "path": ".",
+    "commit": "1128edaf46fdebaa5741e12b1a76a2b5ed6c51c9",
+    "marketplace": "nanoflow",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "See your whole dev workflow in one dashboard.",
+    "where": "Side pane",
+    "benefits": [
+      "Worktrees on their own ports, tickets, PRs and CI",
+      "Checks and Playwright in a dashboard pane",
+      "A secrets vault Claude uses without seeing the values"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/nanosite-ai/nanoflow/1128edaf46fdebaa5741e12b1a76a2b5ed6c51c9/docs/media/demo.gif",
+      "https://raw.githubusercontent.com/nanosite-ai/nanoflow/1128edaf46fdebaa5741e12b1a76a2b5ed6c51c9/docs/media/claude-desktop.png"
+    ]
+  },
+  {
+    "id": "boss-fight",
+    "name": "boss-fight",
+    "repo": "OneWave-AI/claude-code-mods",
+    "path": "boss-fight",
+    "commit": "e6da26ca36a88eec3be25605d30fa20f2c1c0cec",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Beat failing tests like a video game boss.",
+    "where": "Side pane",
+    "benefits": [
+      "Failing tests spawn a pixel boss",
+      "Every run that fixes tests lands a hit",
+      "Zero failures is a KO with loot"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/e6da26ca36a88eec3be25605d30fa20f2c1c0cec/screenshots/boss-fight.png"
+    ]
+  },
+  {
+    "id": "token-monster",
+    "name": "token-monster",
+    "repo": "ugglr/claude-token-monster",
+    "path": ".",
+    "commit": "a73ac7e31176183a127e514ddf0b2fe349b4ab0f",
+    "marketplace": "token-monster",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Feed a pixel monster with your tokens.",
+    "where": "Side pane",
+    "benefits": [
+      "A pixel-art monster that eats tokens",
+      "Shows context, limits and activity at a glance"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ugglr/claude-token-monster/a73ac7e31176183a127e514ddf0b2fe349b4ab0f/media/cast.gif"
+    ]
+  },
+  {
+    "id": "brickfall",
+    "name": "brickfall",
+    "repo": "reporails/arcade",
+    "path": "brickfall",
+    "commit": "5c029cc2840bd4db98594d6e15fe52fa6b1c7cc8",
+    "marketplace": "reporails-arcade",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Play a brick breaker while Claude works.",
+    "where": "Side pane",
+    "benefits": [
+      "Steer with the mouse and catch capsules",
+      "A real picture in kitty and Ghostty, block characters elsewhere"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/reporails/arcade/main/docs/brickfall.png"
+    ]
+  },
+  {
+    "id": "doom",
+    "name": "doom",
+    "repo": "reporails/arcade",
+    "path": "doom",
+    "commit": "5c029cc2840bd4db98594d6e15fe52fa6b1c7cc8",
+    "marketplace": "reporails-arcade",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Play Doom in a side pane.",
+    "where": "Side pane",
+    "benefits": [
+      "Freedoom on the doomgeneric engine, with keys and mouse",
+      "Prebuilt engines for Linux, macOS and Windows"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/reporails/arcade/5c029cc2840bd4db98594d6e15fe52fa6b1c7cc8/docs/doom.png"
+    ]
+  },
+  {
+    "id": "minefield",
+    "name": "minefield",
+    "repo": "reporails/arcade",
+    "path": "minefield",
+    "commit": "5c029cc2840bd4db98594d6e15fe52fa6b1c7cc8",
+    "marketplace": "reporails-arcade",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Clear a minefield while you wait.",
+    "where": "Side pane",
+    "benefits": [
+      "Click or use the keys to clear the board",
+      "A timer and a best time"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/reporails/arcade/main/docs/minefield.png"
+    ]
+  },
+  {
+    "id": "arcade",
+    "name": "arcade",
+    "repo": "mutlumehmet/claude-plugins",
+    "path": "plugins/arcade",
+    "commit": "44916f1aba8a04fbc630a20e8d791653cb8d5226",
+    "marketplace": "mehmetmutlu",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Play pixel games that are driven by your work.",
+    "where": "Above the prompt",
+    "benefits": [
+      "An invading octopus, duck hunt, a slot machine and more",
+      "A block town your agents build"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/mutlumehmet/claude-plugins/44916f1aba8a04fbc630a20e8d791653cb8d5226/docs/images/octo-invader-terminal.gif",
+      "https://raw.githubusercontent.com/mutlumehmet/claude-plugins/44916f1aba8a04fbc630a20e8d791653cb8d5226/docs/images/octo-invader.gif",
+      "https://raw.githubusercontent.com/mutlumehmet/claude-plugins/44916f1aba8a04fbc630a20e8d791653cb8d5226/docs/images/duck-hunt.gif"
+    ]
+  },
+  {
+    "id": "little-harvest",
+    "name": "little-harvest",
+    "repo": "theonly1me/claude-code-mods",
+    "path": "plugins/little-harvest",
+    "commit": "6d69bf8871bb088c3bdf5b5526b03dce633cdb88",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Grow a farm from the files you change.",
+    "where": "Side pane",
+    "benefits": [
+      "Every changed file becomes a crop",
+      "Tests bring sun or storms",
+      "Passing turns fill the barn"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/theonly1me/claude-code-mods/6d69bf8871bb088c3bdf5b5526b03dce633cdb88/plugins/little-harvest/assets/preview.gif"
+    ]
+  },
+  {
+    "id": "night-feast",
+    "name": "night-feast",
+    "repo": "theonly1me/claude-code-mods",
+    "path": "plugins/night-feast",
+    "commit": "6d69bf8871bb088c3bdf5b5526b03dce633cdb88",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Watch a vampire feed on your tool calls.",
+    "where": "Above the prompt",
+    "benefits": [
+      "A vampire feeds on every finished tool call",
+      "The moon tracks how full the context is",
+      "Dawn means it is time to compact"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/theonly1me/claude-code-mods/6d69bf8871bb088c3bdf5b5526b03dce633cdb88/plugins/night-feast/assets/preview.gif"
+    ]
+  },
+  {
+    "id": "sparkmine",
+    "name": "sparkmine",
+    "repo": "tozmoz/sparkmine",
+    "path": ".",
+    "commit": "dd67cc6a20abf9db1139ac3cd35696c68567be6c",
+    "marketplace": "sparkmine",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Play a pixel-art mining clicker above your prompt.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Claude works, you click"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/tozmoz/sparkmine/dd67cc6a20abf9db1139ac3cd35696c68567be6c/docs/band.png",
+      "https://raw.githubusercontent.com/tozmoz/sparkmine/dd67cc6a20abf9db1139ac3cd35696c68567be6c/docs/shop.png",
+      "https://raw.githubusercontent.com/tozmoz/sparkmine/dd67cc6a20abf9db1139ac3cd35696c68567be6c/docs/layers.png"
+    ]
+  },
+  {
+    "id": "wrapped",
+    "name": "wrapped",
+    "repo": "Singh-AP/awesome-claude-mods",
+    "path": "mods/fun/wrapped",
+    "commit": "34c3959f3f137f295eba2add43fb1866ce3d5c43",
+    "marketplace": "awesome-claude-mods",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Get your Claude Code year in review.",
+    "where": "Side pane",
+    "benefits": [
+      "Prompts, tool calls, lines written and streaks",
+      "Your coding persona",
+      "A share card you can copy"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/Singh-AP/awesome-claude-mods/34c3959f3f137f295eba2add43fb1866ce3d5c43/assets/screens/wrapped.svg"
+    ]
+  },
+  {
+    "id": "codecraft",
+    "name": "codecraft",
+    "repo": "mkpvishnu/claude-mods",
+    "path": "codecraft",
+    "commit": "e2b23c2b444b897c7992650b5dbc30dcefff7f9c",
+    "marketplace": "claude-mods",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Turn your session into a block-game HUD.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Hearts for context and armor for safety nets",
+      "XP for verified work",
+      "60 advancements that persist across sessions"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/mkpvishnu/claude-mods/e2b23c2b444b897c7992650b5dbc30dcefff7f9c/docs/sprites.png",
+      "https://raw.githubusercontent.com/mkpvishnu/claude-mods/e2b23c2b444b897c7992650b5dbc30dcefff7f9c/docs/advancements.png"
+    ]
+  },
+  {
+    "id": "pixel-crew",
+    "name": "pixel-crew",
+    "repo": "Trackszx/pixelcrew",
+    "path": ".",
+    "commit": "1d8257971da3cd8ae03748423a20f60dfd626960",
+    "marketplace": "pixelcrew",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Turn your subagents into a pixel-art crew.",
+    "where": "Side pane",
+    "benefits": [
+      "A pixel-art progress bar with the Claude mascot",
+      "A side panel of characters like developer, artist and tester"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/Trackszx/pixelcrew/1d8257971da3cd8ae03748423a20f60dfd626960/docs/crew.png",
+      "https://raw.githubusercontent.com/Trackszx/pixelcrew/1d8257971da3cd8ae03748423a20f60dfd626960/docs/band.png",
+      "https://raw.githubusercontent.com/Trackszx/pixelcrew/1d8257971da3cd8ae03748423a20f60dfd626960/docs/moods.png"
+    ]
+  },
+  {
+    "id": "pixel-cat",
+    "name": "pixel-cat",
+    "repo": "matthlh/claude-mods",
+    "path": "plugins/pixel-cat",
+    "commit": "49ef4ad620dd260f6eaa7c5b63458f069cd5eeb5",
+    "marketplace": "matthlh",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Keep a little pixel cat above your prompt.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Watches your usage limits",
+      "Announces when work finishes",
+      "Other packs, like an adventurer who mines and fights zombies"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/matthlh/claude-mods/49ef4ad620dd260f6eaa7c5b63458f069cd5eeb5/plugins/pixel-cat/docs/preview.svg",
+      "https://raw.githubusercontent.com/matthlh/claude-mods/49ef4ad620dd260f6eaa7c5b63458f069cd5eeb5/plugins/pixel-cat/docs/working.svg",
+      "https://raw.githubusercontent.com/matthlh/claude-mods/49ef4ad620dd260f6eaa7c5b63458f069cd5eeb5/plugins/pixel-cat/docs/play.svg"
+    ]
+  },
+  {
+    "id": "clawd-tales",
+    "name": "clawd-tales",
+    "repo": "plaxagoras/clawd-tales",
+    "path": ".",
+    "commit": "09aa1261b98eb58170ef48905cd00a5e75bca898",
+    "marketplace": "clawd-tales",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Watch a pixel Clawd act out every tool call.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Helpers wander in by model color",
+      "Makes no model calls"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/plaxagoras/clawd-tales/09aa1261b98eb58170ef48905cd00a5e75bca898/assets/demo.gif"
+    ]
+  },
+  {
+    "id": "at-work",
+    "name": "at-work",
+    "repo": "zhuoxingzhang/pixel-at-work",
+    "path": ".",
+    "commit": "3fc00b3ad2ef3a57ac043f8d28e7abcbd1679a6c",
+    "marketplace": "pixel-at-work",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "See what Claude is doing as a pixel-art scene.",
+    "where": "Above the prompt",
+    "benefits": [
+      "An animation of what Claude is doing right now",
+      "Computer-science jokes on the spinner",
+      "Holiday decorations"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/zhuoxingzhang/pixel-at-work/3fc00b3ad2ef3a57ac043f8d28e7abcbd1679a6c/docs/tour.gif",
+      "https://raw.githubusercontent.com/zhuoxingzhang/pixel-at-work/3fc00b3ad2ef3a57ac043f8d28e7abcbd1679a6c/docs/holidays.png"
+    ]
   }
 ]
