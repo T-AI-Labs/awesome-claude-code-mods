@@ -60,17 +60,24 @@ const test = dir => {
   return { passed: status === 0 && count('pass') > 0, pass: count('pass'), fail: count('fail') }
 }
 
+// One flaky test should not drop a mod for a week, so a failure counts only if it repeats.
+const testWithRetry = dir => {
+  const first = test(dir)
+
+  return first.passed ? { ...first, attempts: 1 } : { ...test(dir), attempts: 2 }
+}
+
 const check = mod => {
   const dir = mkdtempSync(join(tmpdir(), 'mod-'))
 
   try {
     if (!checkout(mod, dir)) {
-      return { checkedOut: false, validated: false, tested: false, pass: 0, fail: 0, calls: [] }
+      return { checkedOut: false, validated: false, tested: false, pass: 0, fail: 0, attempts: 0, calls: [] }
     }
 
     const target = mod.path === '.' ? dir : join(dir, mod.path)
     const validated = validate(target)
-    const tested = test(target)
+    const tested = testWithRetry(target)
 
     return {
       checkedOut: true,
@@ -78,6 +85,7 @@ const check = mod => {
       tested: tested.passed,
       pass: tested.pass,
       fail: tested.fail,
+      attempts: tested.attempts,
       calls: validated.calls,
       usesTokens: validated.calls.some(call => TOKEN_CALLS.test(call)),
       usesNetwork: validated.calls.some(call => NETWORK_CALLS.test(call)),

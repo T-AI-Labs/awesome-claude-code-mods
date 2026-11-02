@@ -304,7 +304,7 @@ const openDetail = mod => {
       el('section', {},
         el('h3', {}, 'Test result'),
         el('p', { style: 'margin:0;font-size:14.5px' },
-          `${testsLabel(mod)} and validation is clean on Claude Code ${results.claudeVersion}, checked ${checked.toLocaleDateString('en', { dateStyle: 'medium' })}. `,
+          `${testsLabel(mod)}${mod.result.attempts === 2 ? ' on the second try' : ''} and validation is clean on Claude Code ${results.claudeVersion}, checked ${checked.toLocaleDateString('en', { dateStyle: 'medium' })}. `,
           el('span', { style: 'color:var(--muted)' }, 'Its own tests, not a security audit.'),
         ),
       ),

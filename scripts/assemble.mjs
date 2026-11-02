@@ -115,7 +115,7 @@ const modPage = mod => {
         </section>
         <section>
           <h2>Test result</h2>
-          <p class="plain">${tests} and validation is clean on Claude Code ${esc(results.claudeVersion)}, checked ${checked}. <span class="quiet">Its own tests, not a security audit.</span></p>
+          <p class="plain">${tests}${mod.result.attempts === 2 ? ' on the second try' : ''} and validation is clean on Claude Code ${esc(results.claudeVersion)}, checked ${checked}. <span class="quiet">Its own tests, not a security audit.</span></p>
         </section>
         <section>
           <div class="section-head"><h2>Install</h2><button class="copy" type="button" data-copy="${esc(installOf(mod))}">Copy</button></div>

@@ -52,11 +52,11 @@ ${browse}
 
 - **You see it first.** Every mod has a real screenshot or recording, so you know what you get before you install anything.
 - **You know the cost.** Each mod says whether it can spend tokens, reach the network, run commands or write files.
-- **It keeps working.** CI runs each mod's tests every week on the latest Claude Code. A mod that fails leaves the gallery until it passes again.
+- **It keeps working.** CI runs each mod's tests every week on the latest Claude Code. A mod that fails twice in a row leaves the gallery until it passes again.
 
 ## How the testing works
 
-Once a week, CI checks out the exact commit listed in [\`data/mods.json\`](data/mods.json) and runs \`claude plugin validate\` and the mod's own tests on the latest Claude Code, in a job without secrets.
+Once a week, CI checks out the exact commit listed in [\`data/mods.json\`](data/mods.json) and runs \`claude plugin validate\` and the mod's own tests on the latest Claude Code, in a job without secrets. A failed test run gets one retry.
 
 It is not a security audit. A passing run means the mod's own tests pass, not that every feature was used by hand. Tokens, network, commands and files come from the validator's static list of API calls. Screenshots come from the mods' authors. The install commands fetch the author's latest version, which can be newer than the tested commit. Mods run with your user permissions, so read the source of anything you install.
 
