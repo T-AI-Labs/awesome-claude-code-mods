@@ -1,0 +1,12 @@
+{
+  "name": "tested-claude-code-mods",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check.mjs results/results.json",
+    "posters": "node scripts/posters.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}

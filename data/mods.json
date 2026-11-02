@@ -1,0 +1,582 @@
+[
+  {
+    "id": "context-usage",
+    "name": "context-usage",
+    "repo": "T-AI-Labs/claude-code-mods",
+    "path": "context-usage",
+    "commit": "098dafc072329b331b6b6810c18b4bf115a69884",
+    "marketplace": "T-AI-Labs",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Know how full your context is and how much of your limits is left.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Context fill at a glance, with Compact and Clear one click away",
+      "An auto-compact threshold you pick from a dropdown",
+      "Your 5-hour and weekly limits, with the time until each resets"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/context-usage.svg"
+    ],
+    "own": true
+  },
+  {
+    "id": "usage-pane",
+    "name": "usage-pane",
+    "repo": "T-AI-Labs/claude-code-mods",
+    "path": "usage-pane",
+    "commit": "098dafc072329b331b6b6810c18b4bf115a69884",
+    "marketplace": "T-AI-Labs",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "See where your tokens went, down to the prompts that cost the most.",
+    "where": "Side pane",
+    "benefits": [
+      "Tokens, cache hit rate and API price by day, model and project",
+      "Sessions and prompts sorted by cost, with what made them expensive",
+      "History of your 5-hour and weekly limits"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/usage-pane.svg"
+    ],
+    "own": true
+  },
+  {
+    "id": "cache-meter",
+    "name": "cache-meter",
+    "repo": "T-AI-Labs/claude-code-mods",
+    "path": "cache-meter",
+    "commit": "098dafc072329b331b6b6810c18b4bf115a69884",
+    "marketplace": "T-AI-Labs",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Stop paying to rebuild a prompt cache that just went cold.",
+    "where": "Above the prompt",
+    "benefits": [
+      "How much of the last turn the prompt cache served",
+      "How long the cache stays warm",
+      "A Keep warm switch for when you step away"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/cache-meter.svg"
+    ],
+    "own": true
+  },
+  {
+    "id": "cache-clock",
+    "name": "cache-clock",
+    "repo": "ray-amjad/claude-code-mods",
+    "path": "plugins/cache-clock",
+    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Get a countdown before your prompt cache goes cold.",
+    "where": "Above the prompt",
+    "benefits": [
+      "A one-line band with how much context is used",
+      "A countdown until the prompt cache goes cold"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/cache-clock/screenshot.png"
+    ]
+  },
+  {
+    "id": "agent-usage-guard",
+    "name": "agent-usage-guard",
+    "repo": "rbartoli/agent-usage-guard",
+    "path": ".",
+    "commit": "e8f410440a066e9a1861e00d2e508902d9fcbaed",
+    "marketplace": "agent-usage-guard",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Catch runaway subagents before they burn through your usage window.",
+    "where": "Dialog",
+    "benefits": [
+      "Holds subagent fan-out, heavy-context prompts and retry loops",
+      "Reads your plan usage and counts agents across all sessions",
+      "Asks you in Claude Code's own dialog before anything continues"
+    ],
+    "images": [
+      "https://github.com/rbartoli/agent-usage-guard/releases/download/agent-usage-guard--v1.0.0/agent-usage-guard.gif"
+    ]
+  },
+  {
+    "id": "compact-adviser",
+    "name": "compact-adviser",
+    "repo": "kunchenguid/compact-adviser",
+    "path": "packages/claude-mod",
+    "commit": "37fa1a665b8933de68c90014312060e862cf121a",
+    "marketplace": "compact-adviser",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Get told when it is a good moment to compact.",
+    "where": "Status line",
+    "benefits": [
+      "Suggests /compact at a completed checkpoint",
+      "Can run it for you if you opt in",
+      "The judgment comes from TypeSafe Jev, an external service"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/kunchenguid/compact-adviser/main/docs/hint-status-line.png",
+      "https://raw.githubusercontent.com/kunchenguid/compact-adviser/main/docs/eval-usage-floor-curve.png"
+    ]
+  },
+  {
+    "id": "ccswap",
+    "name": "ccswap",
+    "repo": "errhythm/ccswap",
+    "path": "mod",
+    "commit": "9913f09a23d074cdddb1fbf8f3a5b2b3e9bafa81",
+    "marketplace": "ccswap",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Switch between Claude accounts without leaving your session.",
+    "where": "Side pane",
+    "benefits": [
+      "/ccswap lists and switches accounts",
+      "An accounts pane and a toast when you switch",
+      "A quota band above the prompt"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/errhythm/ccswap/9913f09a23d074cdddb1fbf8f3a5b2b3e9bafa81/assets/mod-pane-claude.png"
+    ]
+  },
+  {
+    "id": "flightdeck",
+    "name": "flightdeck",
+    "repo": "scasella/claude-flightdeck",
+    "path": ".",
+    "commit": "f9c3c5230775109de4bd08c5c7a42112a6a2a885",
+    "marketplace": "claude-flightdeck",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Watch every agent, permission check and turn on one live dashboard.",
+    "where": "Side pane",
+    "benefits": [
+      "Main model vitals and subagent cards with swimlanes",
+      "Every permission check as it happens",
+      "A receipt per turn and a session log, all from real session events"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/scasella/claude-flightdeck/f9c3c5230775109de4bd08c5c7a42112a6a2a885/docs/media/demo.gif",
+      "https://raw.githubusercontent.com/scasella/claude-flightdeck/f9c3c5230775109de4bd08c5c7a42112a6a2a885/docs/media/docked-session.png",
+      "https://raw.githubusercontent.com/scasella/claude-flightdeck/f9c3c5230775109de4bd08c5c7a42112a6a2a885/docs/media/docked-pane.png"
+    ]
+  },
+  {
+    "id": "filetree",
+    "name": "filetree",
+    "repo": "data-goblin/claude-code-filetree",
+    "path": ".",
+    "commit": "0ad31a61a18369cb6461a56f7ade47a9e2d18dfe",
+    "marketplace": "claude-code-filetree",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "See which files Claude is working in, in an IDE-style tree.",
+    "where": "Side pane",
+    "benefits": [
+      "A file tree that follows what Claude is doing",
+      "Shows where in the files the work happens"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/0ad31a61a18369cb6461a56f7ade47a9e2d18dfe/media/filetree-shimmer.gif",
+      "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/0ad31a61a18369cb6461a56f7ade47a9e2d18dfe/docs/media/preview.gif",
+      "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/0ad31a61a18369cb6461a56f7ade47a9e2d18dfe/docs/media/treemap.gif"
+    ]
+  },
+  {
+    "id": "catalog-pane",
+    "name": "catalog-pane",
+    "repo": "T-AI-Labs/claude-code-mods",
+    "path": "catalog-pane",
+    "commit": "098dafc072329b331b6b6810c18b4bf115a69884",
+    "marketplace": "T-AI-Labs",
+    "license": "MIT",
+    "category": "overview",
+    "tagline": "Find everything you have installed, and what it costs, in one place.",
+    "where": "Side pane",
+    "benefits": [
+      "Every skill, command, agent, mod, plugin, hook, MCP server and tool",
+      "Usage counts and token cost per entry",
+      "Buttons to insert, run, update, disable or uninstall"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/catalog-pane.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/catalog-pane-detail.svg"
+    ],
+    "own": true
+  },
+  {
+    "id": "secret-box",
+    "name": "secret-box",
+    "repo": "ray-amjad/claude-code-mods",
+    "path": "plugins/secret-box",
+    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "safety",
+    "tagline": "Let Claude use your API keys without ever seeing them.",
+    "where": "Dialog",
+    "benefits": [
+      "A masked box saves keys to .env and gives Claude a placeholder",
+      "Keys printed by a tool come back as placeholders",
+      "Committing .env is refused"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/secret-box/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/secret-box/images/use.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/secret-box/images/guard.png"
+    ]
+  },
+  {
+    "id": "transcript-redactor",
+    "name": "transcript-redactor",
+    "repo": "ray-amjad/claude-code-mods",
+    "path": "plugins/transcript-redactor",
+    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "safety",
+    "tagline": "Keep secrets and email addresses out of your session transcript.",
+    "where": "In the background",
+    "benefits": [
+      "Swaps each secret for a stable placeholder on the way in",
+      "Puts the real value back when a tool call needs it"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/transcript-redactor/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/transcript-redactor/images/round-trip.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/transcript-redactor/images/hidden-kept.png"
+    ]
+  },
+  {
+    "id": "prismantis",
+    "name": "prismantis",
+    "repo": "NahumLitvin/prismantis",
+    "path": ".",
+    "commit": "e08bebe191e8f14334a17a1c684520dcf95bbeb4",
+    "marketplace": "prismantis",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "Turn plain replies into colorful, easy-to-scan answers.",
+    "where": "In the transcript",
+    "benefits": [
+      "Better tables, headings, code, numbers, paths and links",
+      "Several themes to choose from"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/NahumLitvin/prismantis/e08bebe191e8f14334a17a1c684520dcf95bbeb4/docs/tour.gif",
+      "https://raw.githubusercontent.com/NahumLitvin/prismantis/e08bebe191e8f14334a17a1c684520dcf95bbeb4/docs/compare/opencode.png",
+      "https://raw.githubusercontent.com/NahumLitvin/prismantis/e08bebe191e8f14334a17a1c684520dcf95bbeb4/docs/themes.png"
+    ]
+  },
+  {
+    "id": "skins",
+    "name": "skins",
+    "repo": "hellosverre/claude-skins",
+    "path": ".",
+    "commit": "985ad63fdb3483bbb98f61cf57955cac3f56a449",
+    "marketplace": "hellosverre-mods",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "Give Claude Code a whole new look, with cards for code, diffs and tables.",
+    "where": "In the transcript",
+    "benefits": [
+      "Fifteen themes you swap live with /skin",
+      "Highlighted code, diff, table, math, Mermaid and shell cards",
+      "Tool rows that fold open, a usage band and a calm mode"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/hellosverre/claude-skins/985ad63fdb3483bbb98f61cf57955cac3f56a449/docs/demo.gif",
+      "https://raw.githubusercontent.com/hellosverre/claude-skins/985ad63fdb3483bbb98f61cf57955cac3f56a449/docs/previews/hero-dark.svg",
+      "https://raw.githubusercontent.com/hellosverre/claude-skins/985ad63fdb3483bbb98f61cf57955cac3f56a449/docs/previews/spinners-dark.svg"
+    ]
+  },
+  {
+    "id": "readable-layout",
+    "name": "readable-layout",
+    "repo": "GarvitNangru/claude-code-mods",
+    "path": "mods/readable-layout",
+    "commit": "f58af1a43847aeadf2302023dad3adce1ab38bc2",
+    "marketplace": "garvit-mods",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "Make the terminal transcript read like a conversation.",
+    "where": "In the transcript",
+    "benefits": [
+      "Your messages and Claude's answers in labeled boxes",
+      "Claude's work as quiet lines between them",
+      "A rule at the end of every turn"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/GarvitNangru/claude-code-mods/f58af1a43847aeadf2302023dad3adce1ab38bc2/docs/screenshots/readable-layout-after.png",
+      "https://raw.githubusercontent.com/GarvitNangru/claude-code-mods/f58af1a43847aeadf2302023dad3adce1ab38bc2/docs/screenshots/readable-layout-before.png"
+    ]
+  },
+  {
+    "id": "firelight",
+    "name": "firelight",
+    "repo": "GarvitNangru/claude-code-mods",
+    "path": "skins/firelight",
+    "commit": "f58af1a43847aeadf2302023dad3adce1ab38bc2",
+    "marketplace": "garvit-mods",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "Work in a warm, low-glare color theme.",
+    "where": "Theme",
+    "benefits": [
+      "Three variants: Coal, Smoulder and Ash",
+      "Terminal background and colors follow the theme",
+      "Comes with a matching Windows Terminal look and JetBrains Mono"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/GarvitNangru/claude-code-mods/f58af1a43847aeadf2302023dad3adce1ab38bc2/docs/screenshots/firelight-coal.png"
+    ]
+  },
+  {
+    "id": "cc-intelligent-ui",
+    "name": "cc-intelligent-ui",
+    "repo": "razorback16/cc-intelligent-ui",
+    "path": ".",
+    "commit": "18f2e67b1765f2abffc05e8daa4a7039f669de38",
+    "marketplace": "razorback16",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "See diagrams, charts and math rendered right in your terminal.",
+    "where": "In the transcript",
+    "benefits": [
+      "Answers drawn as rendered Markdown pictures",
+      "Live Typst for diagrams, charts and math"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/razorback16/cc-intelligent-ui/18f2e67b1765f2abffc05e8daa4a7039f669de38/outcomes/out/hero-light.gif",
+      "https://raw.githubusercontent.com/razorback16/cc-intelligent-ui/18f2e67b1765f2abffc05e8daa4a7039f669de38/outcomes/out/0-hero-2-latency.png",
+      "https://raw.githubusercontent.com/razorback16/cc-intelligent-ui/18f2e67b1765f2abffc05e8daa4a7039f669de38/outcomes/out/6-diagrams-light.png"
+    ]
+  },
+  {
+    "id": "image-view",
+    "name": "image-view",
+    "repo": "jarrodwatts/claude-image-view",
+    "path": ".",
+    "commit": "370b8e7bc0708bebe9762e63534f7ca18bc3e802",
+    "marketplace": "claude-image-view",
+    "license": "MIT",
+    "category": "read",
+    "tagline": "See the images you paste, not just [Image #1].",
+    "where": "Above the prompt",
+    "benefits": [
+      "Thumbnails above the prompt instead of bare image tags"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/jarrodwatts/claude-image-view/370b8e7bc0708bebe9762e63534f7ca18bc3e802/claude-image-view.png"
+    ]
+  },
+  {
+    "id": "human-in-the-loop",
+    "name": "human-in-the-loop",
+    "repo": "tzafrir/human-in-the-loop",
+    "path": ".",
+    "commit": "bf8233cd24e9d038516b307f7f13e2449aba1b60",
+    "marketplace": "human-in-the-loop",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Never lose track of what Claude needs from you.",
+    "where": "Side pane",
+    "benefits": [
+      "Claude assigns you the tasks only you can do",
+      "They wait in a My tasks pane, counted under the prompt",
+      "You answer or reject each one"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/tzafrir/human-in-the-loop/bf8233cd24e9d038516b307f7f13e2449aba1b60/media/hero.gif"
+    ]
+  },
+  {
+    "id": "decision-tree",
+    "name": "decision-tree",
+    "repo": "ray-amjad/claude-code-mods",
+    "path": "plugins/decision-tree",
+    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Understand the choice Claude is asking you to make, and try each option.",
+    "where": "Side pane",
+    "benefits": [
+      "Explains the choice when a reply ends with a question",
+      "Explore any option, or your own, in a real forked session"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/decision-tree/branches.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/decision-tree/diagram.png"
+    ]
+  },
+  {
+    "id": "diagram-pane",
+    "name": "diagram-pane",
+    "repo": "ray-amjad/claude-code-mods",
+    "path": "plugins/diagram-pane",
+    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Keep every diagram Claude draws beside your work.",
+    "where": "Side pane",
+    "benefits": [
+      "Pins every diagram and keeps a live map of the work",
+      "Go into boxes and change them"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/diagram-pane/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/diagram-pane/images/pinned.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/diagram-pane/images/gate.png"
+    ]
+  },
+  {
+    "id": "prompt-bouncer",
+    "name": "prompt-bouncer",
+    "repo": "ray-amjad/claude-code-mods",
+    "path": "plugins/prompt-bouncer",
+    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Catch vague prompts before they waste a turn.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Bounces vague prompts before Claude sees them",
+      "Suggests your project's own terms"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/prompt-bouncer/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/prompt-bouncer/images/quick.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/prompt-bouncer/images/how-it-works.png"
+    ]
+  },
+  {
+    "id": "dream-pass",
+    "name": "dream-pass",
+    "repo": "ray-amjad/claude-code-mods",
+    "path": "plugins/dream-pass",
+    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Clean up Claude's memory, with a backup and undo.",
+    "where": "Side pane",
+    "benefits": [
+      "Merges duplicates and rewrites stale entries",
+      "Removes dead ones and tidies MEMORY.md",
+      "Keeps a backup you can restore"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/dream-pass/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/dream-pass/images/before-after.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/dream-pass/images/gate.png"
+    ]
+  },
+  {
+    "id": "brewmod-reminders",
+    "name": "brewmod-reminders",
+    "repo": "kochetkov-ma/claude-brewcode",
+    "path": "brewmod-reminders",
+    "commit": "61dfaa8bdbcb59aa8a7b45570dd71885ccae52f8",
+    "marketplace": "claude-brewcode",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Set reminders that survive between sessions.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Durable reminders like \"check prod tomorrow 09:00\"",
+      "Shown at session start and offered at the first prompt",
+      "Nothing runs unasked"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/kochetkov-ma/claude-brewcode/61dfaa8bdbcb59aa8a7b45570dd71885ccae52f8/assets/brewmods/reminders.gif"
+    ]
+  },
+  {
+    "id": "show-your-work",
+    "name": "show-your-work",
+    "repo": "iamumeransari/claude-show-your-work",
+    "path": ".",
+    "commit": "5f218cc1ebb57c0df70c3f7e61866df5c5d67a51",
+    "marketplace": "iamumeransari",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Review what Claude built with screenshots and videos in your terminal.",
+    "where": "In the transcript",
+    "benefits": [
+      "Screenshots of the finished work",
+      "Videos of Claude clicking through your app",
+      "Synced before and after QA"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/iamumeransari/claude-show-your-work/5f218cc1ebb57c0df70c3f7e61866df5c5d67a51/docs/qa-product.jpg",
+      "https://raw.githubusercontent.com/iamumeransari/claude-show-your-work/5f218cc1ebb57c0df70c3f7e61866df5c5d67a51/docs/homepage.jpg",
+      "https://raw.githubusercontent.com/iamumeransari/claude-show-your-work/5f218cc1ebb57c0df70c3f7e61866df5c5d67a51/docs/concepts.jpg"
+    ]
+  },
+  {
+    "id": "hal-grammar-check",
+    "name": "hal-grammar-check",
+    "repo": "vinta/hal-9000",
+    "path": "plugins/hal-grammar-check",
+    "commit": "af3fa550b755091df95648b6749b96bf5c85da8f",
+    "marketplace": "hal-9000",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Fix your grammar while you type a prompt.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Checks your prompt as you type",
+      "Shows the result above the prompt box"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/vinta/hal-9000/main/assets/claude-code-grammar-check.png"
+    ]
+  },
+  {
+    "id": "cc-arcade",
+    "name": "cc-arcade",
+    "repo": "sezaakgun/cc-arcade",
+    "path": ".",
+    "commit": "0baff06d31295850283c2eebe052f39bbc35473f",
+    "marketplace": "cc-arcade",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Play Tetris, Snake or 2048 while Claude works.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Nine games, from Snake to Space Invaders",
+      "A pet that grows as Claude tests, commits and edits"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sezaakgun/cc-arcade/0baff06d31295850283c2eebe052f39bbc35473f/docs/demo.gif",
+      "https://raw.githubusercontent.com/sezaakgun/cc-arcade/0baff06d31295850283c2eebe052f39bbc35473f/docs/screenshots/tetris.png",
+      "https://raw.githubusercontent.com/sezaakgun/cc-arcade/0baff06d31295850283c2eebe052f39bbc35473f/docs/screenshots/picker.png"
+    ]
+  },
+  {
+    "id": "intermission",
+    "name": "intermission",
+    "repo": "jarrodwatts/intermission",
+    "path": ".",
+    "commit": "8978f61efc890c13dcbed2d78ced224a6715feb8",
+    "marketplace": "intermission",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Play Doom while Claude works, and get handed back when it is done.",
+    "where": "Takes over the terminal",
+    "benefits": [
+      "Doom deathmatch during long turns",
+      "Hands you back when Claude finishes"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/jarrodwatts/intermission/8978f61efc890c13dcbed2d78ced224a6715feb8/intermission-preview.png",
+      "https://raw.githubusercontent.com/jarrodwatts/intermission/8978f61efc890c13dcbed2d78ced224a6715feb8/intermission-windows.png"
+    ]
+  }
+]
