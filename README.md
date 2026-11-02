@@ -1,6 +1,6 @@
 <h1 align="center">Claude Code Mods Gallery</h1>
 
-<p align="center"><b>See every mod before you install it.</b><br>26 hand-picked mods for Claude Code, each with a screenshot, what it does for you, what it costs and a weekly test run.</p>
+<p align="center"><b>See every mod before you install it.</b><br>29 hand-picked mods for Claude Code, each with a screenshot, what it does for you, what it costs and a weekly test run.</p>
 
 <p align="center"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/"><b>Browse the gallery →</b></a></p>
 
@@ -52,10 +52,6 @@ claude plugin install <mod>@<marketplace>
 <tr>
 <td width="280"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/agent-usage-guard/"><img src="site/posters/agent-usage-guard.webp" width="260" alt="agent-usage-guard"></a></td>
 <td><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/agent-usage-guard/"><b>Catch runaway subagents before they burn through your usage window.</b></a><br><code>agent-usage-guard</code> by rbartoli<br><sub>Can use tokens · No network · 100 tests pass</sub></td>
-</tr>
-<tr>
-<td width="280"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/compact-adviser/"><img src="site/posters/compact-adviser.webp" width="260" alt="compact-adviser"></a></td>
-<td><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/compact-adviser/"><b>Get told when it is a good moment to compact.</b></a><br><code>compact-adviser</code> by kunchenguid<br><sub>Can use tokens · Uses network · 134 tests pass</sub></td>
 </tr>
 <tr>
 <td width="280"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/ccswap/"><img src="site/posters/ccswap.webp" width="260" alt="ccswap"></a></td>
@@ -161,6 +157,22 @@ claude plugin install <mod>@<marketplace>
 <tr>
 <td width="280"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/intermission/"><img src="site/posters/intermission.webp" width="260" alt="intermission"></a></td>
 <td><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/intermission/"><b>Play Doom while Claude works, and get handed back when it is done.</b></a><br><code>intermission</code> by jarrodwatts<br><sub>No tokens · No network · 16 tests pass</sub></td>
+</tr>
+<tr>
+<td width="280"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/code-pet/"><img src="site/posters/code-pet.webp" width="260" alt="code-pet"></a></td>
+<td><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/code-pet/"><b>Get a pixel pet that reacts to everything Claude does.</b></a><br><code>code-pet</code> by OneWave-AI<br><sub>No tokens · No network · 12 tests pass</sub></td>
+</tr>
+<tr>
+<td width="280"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/sportscaster/"><img src="site/posters/sportscaster.webp" width="260" alt="sportscaster"></a></td>
+<td><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/sportscaster/"><b>Hear your session as live TV play-by-play.</b></a><br><code>sportscaster</code> by OneWave-AI<br><sub>Can use tokens · No network · 15 tests pass</sub></td>
+</tr>
+<tr>
+<td width="280"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/pixel-pet/"><img src="site/posters/pixel-pet.webp" width="260" alt="pixel-pet"></a></td>
+<td><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/pixel-pet/"><b>Keep an animated pixel companion above your prompt.</b></a><br><code>pixel-pet</code> by lakmadev<br><sub>No tokens · No network · 37 tests pass</sub></td>
+</tr>
+<tr>
+<td width="280"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/claude-pets/"><img src="site/posters/claude-pets.webp" width="260" alt="pets"></a></td>
+<td><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/mods/claude-pets/"><b>Raise a pixel pet that grows as you work.</b></a><br><code>pets</code> by uppinote20<br><sub>No tokens · No network · 41 tests pass</sub></td>
 </tr>
 </table>
 
