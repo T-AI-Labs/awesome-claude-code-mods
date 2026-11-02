@@ -35,7 +35,7 @@ const modPage = mod => {
   const description = `${mod.tagline} ${mod.benefits.join('. ')}.`.slice(0, 300)
   const url = `${SITE}mods/${mod.id}/`
   const related = mods.filter(one => one.category === mod.category && one.id !== mod.id).slice(0, 3)
-  const goal = categories.find(one => one.id === mod.category).label
+  const category = categories.find(one => one.id === mod.category).label
   const tests = `${mod.result.pass} ${mod.result.pass === 1 ? 'test passes' : 'tests pass'}`
   const schema = {
     '@context': 'https://schema.org',
@@ -83,7 +83,7 @@ const modPage = mod => {
     </nav>
   </header>
   <main class="mod-page">
-    <p class="crumb"><a href="../../">All mods</a> / <a href="../../?goal=${mod.category}">${esc(goal)}</a></p>
+    <p class="crumb"><a href="../../">All mods</a> / <a href="../../?category=${mod.category}">${esc(category)}</a></p>
     <div class="mod-layout">
       <div class="stage">
         ${mod.images.map((image, index) => `<div class="stage-main"><img src="${esc(image)}" alt="${esc(mod.name)} in use, image ${index + 1}"${index === 0 ? '' : ' loading="lazy"'}></div>`).join('\n        ')}
@@ -117,7 +117,7 @@ const modPage = mod => {
         </div>
       </div>
     </div>
-    ${related.length === 0 ? '' : `<section class="related"><h2>More mods to ${esc(goal.toLowerCase())}</h2><ul>${related.map(one => `<li><a href="../${one.id}/"><strong>${esc(one.name)}</strong><span>${esc(one.tagline)}</span></a></li>`).join('')}</ul></section>`}
+    ${related.length === 0 ? '' : `<section class="related"><h2>More in ${esc(category)}</h2><ul>${related.map(one => `<li><a href="../${one.id}/"><strong>${esc(one.name)}</strong><span>${esc(one.tagline)}</span></a></li>`).join('')}</ul></section>`}
   </main>
   <footer class="bottom"><p>An independent list, not affiliated with Anthropic. Images belong to the mods' authors.</p></footer>
   <script src="../../mod.js" type="module"></script>

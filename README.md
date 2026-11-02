@@ -26,11 +26,11 @@ claude plugin marketplace add <owner>/<repo>
 claude plugin install <mod>@<marketplace>
 ```
 
-## Find a mod by goal
+## Browse by category
 
-[Spend fewer tokens](#spend-fewer-tokens) · [See what Claude does](#see-what-claude-does) · [Protect secrets](#protect-secrets) · [Read answers better](#read-answers-better) · [Work faster](#work-faster) · [Pass the time](#pass-the-time)
+[Cost & Usage](#cost--usage) · [Monitoring](#monitoring) · [Security](#security) · [Themes & Display](#themes--display) · [Productivity](#productivity) · [Games & Fun](#games--fun)
 
-### Spend fewer tokens
+### Cost & Usage
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### See what Claude does
+### Monitoring
 
 <table>
 <tr>
@@ -76,7 +76,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### Protect secrets
+### Security
 
 <table>
 <tr>
@@ -89,7 +89,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### Read answers better
+### Themes & Display
 
 <table>
 <tr>
@@ -114,7 +114,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### Work faster
+### Productivity
 
 <table>
 <tr>
@@ -151,7 +151,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### Pass the time
+### Games & Fun
 
 <table>
 <tr>

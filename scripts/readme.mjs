@@ -50,7 +50,7 @@ const sections = categories
 
 const jump = categories
   .filter(category => category.id !== 'all' && mods.some(mod => mod.category === category.id))
-  .map(category => `[${category.label}](#${category.label.toLowerCase().replaceAll(' ', '-')})`)
+  .map(category => `[${category.label}](#${category.label.toLowerCase().replace(/[^a-z0-9 -]/g, '').replaceAll(' ', '-')})`)
   .join(' · ')
 
 const readme = `<h1 align="center">Claude Code Mods Gallery</h1>
@@ -80,7 +80,7 @@ claude plugin marketplace add <owner>/<repo>
 claude plugin install <mod>@<marketplace>
 \`\`\`
 
-## Find a mod by goal
+## Browse by category
 
 ${jump}
 

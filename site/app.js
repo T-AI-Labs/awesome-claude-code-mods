@@ -123,7 +123,7 @@ const matches = (mod, { category, query, noTokens, noNetwork }) => {
 const syncUrl = () => {
   const params = new URLSearchParams()
 
-  if (state.category !== 'all') params.set('goal', state.category)
+  if (state.category !== 'all') params.set('category', state.category)
   if (state.query) params.set('q', state.query)
   if (state.noTokens) params.set('tokens', 'no')
   if (state.noNetwork) params.set('network', 'no')
@@ -307,7 +307,7 @@ const followHash = () => {
 const readUrl = () => {
   const params = new URLSearchParams(location.search)
 
-  state.category = CATEGORIES.some(one => one.id === params.get('goal')) ? params.get('goal') : 'all'
+  state.category = CATEGORIES.some(one => one.id === params.get('category')) ? params.get('category') : 'all'
   state.query = params.get('q') ?? ''
   state.noTokens = params.get('tokens') === 'no'
   state.noNetwork = params.get('network') === 'no'

@@ -1,9 +1,9 @@
 [
   { "id": "all", "label": "All mods" },
-  { "id": "cost", "label": "Spend fewer tokens" },
-  { "id": "overview", "label": "See what Claude does" },
-  { "id": "safety", "label": "Protect secrets" },
-  { "id": "read", "label": "Read answers better" },
-  { "id": "flow", "label": "Work faster" },
-  { "id": "fun", "label": "Pass the time" }
+  { "id": "cost", "label": "Cost & Usage" },
+  { "id": "overview", "label": "Monitoring" },
+  { "id": "safety", "label": "Security" },
+  { "id": "read", "label": "Themes & Display" },
+  { "id": "flow", "label": "Productivity" },
+  { "id": "fun", "label": "Games & Fun" }
 ]
