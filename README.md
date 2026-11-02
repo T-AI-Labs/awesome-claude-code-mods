@@ -28,9 +28,9 @@ claude plugin install <mod>@<marketplace>
 
 ## Browse by category
 
-[Cost & Usage](#cost--usage) · [Monitoring](#monitoring) · [Security](#security) · [Themes & Display](#themes--display) · [Productivity](#productivity) · [Games & Fun](#games--fun)
+[💰 Cost & Usage](#-cost--usage) · [📊 Monitoring](#-monitoring) · [🔒 Security](#-security) · [🎨 Themes & Display](#-themes--display) · [⚡ Productivity](#-productivity) · [🎮 Games & Fun](#-games--fun)
 
-### Cost & Usage
+### 💰 Cost & Usage
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### Monitoring
+### 📊 Monitoring
 
 <table>
 <tr>
@@ -76,7 +76,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### Security
+### 🔒 Security
 
 <table>
 <tr>
@@ -89,7 +89,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### Themes & Display
+### 🎨 Themes & Display
 
 <table>
 <tr>
@@ -114,7 +114,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### Productivity
+### ⚡ Productivity
 
 <table>
 <tr>
@@ -151,7 +151,7 @@ claude plugin install <mod>@<marketplace>
 </tr>
 </table>
 
-### Games & Fun
+### 🎮 Games & Fun
 
 <table>
 <tr>

@@ -1,9 +1,9 @@
 [
   { "id": "all", "label": "All mods" },
-  { "id": "cost", "label": "Cost & Usage" },
-  { "id": "overview", "label": "Monitoring" },
-  { "id": "safety", "label": "Security" },
-  { "id": "read", "label": "Themes & Display" },
-  { "id": "flow", "label": "Productivity" },
-  { "id": "fun", "label": "Games & Fun" }
+  { "id": "cost", "label": "💰 Cost & Usage" },
+  { "id": "overview", "label": "📊 Monitoring" },
+  { "id": "safety", "label": "🔒 Security" },
+  { "id": "read", "label": "🎨 Themes & Display" },
+  { "id": "flow", "label": "⚡ Productivity" },
+  { "id": "fun", "label": "🎮 Games & Fun" }
 ]
