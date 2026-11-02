@@ -578,5 +578,84 @@
       "https://raw.githubusercontent.com/jarrodwatts/intermission/8978f61efc890c13dcbed2d78ced224a6715feb8/intermission-preview.png",
       "https://raw.githubusercontent.com/jarrodwatts/intermission/8978f61efc890c13dcbed2d78ced224a6715feb8/intermission-windows.png"
     ]
+  },
+  {
+    "id": "code-pet",
+    "name": "code-pet",
+    "repo": "OneWave-AI/claude-code-mods",
+    "path": "code-pet",
+    "commit": "e6da26ca36a88eec3be25605d30fa20f2c1c0cec",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Get a pixel pet that reacts to everything Claude does.",
+    "where": "Side pane",
+    "benefits": [
+      "Eats on tool calls and gets sick on failures",
+      "Panics when it sees rm -rf"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/e6da26ca36a88eec3be25605d30fa20f2c1c0cec/screenshots/code-pet.png"
+    ]
+  },
+  {
+    "id": "sportscaster",
+    "name": "sportscaster",
+    "repo": "OneWave-AI/claude-code-mods",
+    "path": "sportscaster",
+    "commit": "e6da26ca36a88eec3be25605d30fa20f2c1c0cec",
+    "marketplace": "claude-code-mods",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Hear your session as live TV play-by-play.",
+    "where": "Spoken aloud",
+    "benefits": [
+      "Commentary on what Claude does, spoken aloud",
+      "Comes with crowd effects"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/e6da26ca36a88eec3be25605d30fa20f2c1c0cec/screenshots/sportscaster.png"
+    ]
+  },
+  {
+    "id": "pixel-pet",
+    "name": "pixel-pet",
+    "repo": "lakmadev/pixel-pet",
+    "path": ".",
+    "commit": "5e07b948b66f39471850ee296510ce35fa2f26d6",
+    "marketplace": "pixel-pet",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Keep an animated pixel companion above your prompt.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Reacts to your session and your typing",
+      "Includes a live context meter"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/lakmadev/pixel-pet/5e07b948b66f39471850ee296510ce35fa2f26d6/docs/promo/pixel-pet-0.3.gif",
+      "https://raw.githubusercontent.com/lakmadev/pixel-pet/5e07b948b66f39471850ee296510ce35fa2f26d6/docs/pixel-pet-band-0.3.png"
+    ]
+  },
+  {
+    "id": "claude-pets",
+    "name": "pets",
+    "repo": "uppinote20/claude-pets",
+    "path": ".",
+    "commit": "1f8027d8b211b12027a8d89e659c85b212e0c5f6",
+    "marketplace": "claude-pets",
+    "license": "MIT",
+    "category": "fun",
+    "tagline": "Raise a pixel pet that grows as you work.",
+    "where": "Side pane",
+    "benefits": [
+      "Wanders around in a pane",
+      "Reacts to your session and grows as you work"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/uppinote20/claude-pets/1f8027d8b211b12027a8d89e659c85b212e0c5f6/assets/demo.gif",
+      "https://raw.githubusercontent.com/uppinote20/claude-pets/1f8027d8b211b12027a8d89e659c85b212e0c5f6/assets/stages.svg",
+      "https://raw.githubusercontent.com/uppinote20/claude-pets/1f8027d8b211b12027a8d89e659c85b212e0c5f6/assets/run.gif"
+    ]
   }
 ]
