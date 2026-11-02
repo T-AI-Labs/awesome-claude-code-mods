@@ -5,12 +5,13 @@ const SITE = 'https://t-ai-labs.github.io/awesome-claude-code-mods/'
 const NAME = 'Claude Code Mods Gallery'
 const REPO = 'https://github.com/T-AI-Labs/awesome-claude-code-mods'
 
-const [resultsPath, out = 'public'] = process.argv.slice(2)
+const [resultsPath, statsPath, out = 'public'] = process.argv.slice(2)
 const readJson = path => JSON.parse(readFileSync(path, 'utf8'))
 const results = readJson(resultsPath)
+const stats = readJson(statsPath)
 const categories = readJson('data/categories.json')
 const mods = readJson('data/mods.json')
-  .map(mod => ({ ...mod, result: results.mods[mod.id] }))
+  .map(mod => ({ ...mod, result: results.mods[mod.id], stats: stats.mods[mod.id] }))
   .filter(mod => mod.result?.validated && mod.result?.tested)
 
 const esc = text =>
@@ -19,6 +20,15 @@ const esc = text =>
 const authorOf = mod => mod.repo.split('/')[0]
 const installOf = mod => `claude plugin marketplace add ${mod.repo}\nclaude plugin install ${mod.name}@${mod.marketplace}`
 const sourceOf = mod => `https://github.com/${mod.repo}/tree/${mod.commit}${mod.path === '.' ? '' : `/${mod.path}`}`
+const compact = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 })
+const longDate = date => new Date(date).toLocaleDateString('en', { dateStyle: 'medium' })
+const statsOf = ({ stats: { stars = null, updatedAt = null } = {} }) =>
+  [
+    stars === null ? null : `<span title="Stars of the whole repository">★ <b>${compact.format(stars)}</b></span>`,
+    updatedAt === null ? null : `<span>Updated ${longDate(updatedAt)}</span>`,
+  ]
+    .filter(Boolean)
+    .join('')
 const checked = new Date(results.checkedAt).toLocaleDateString('en', { dateStyle: 'medium' })
 
 const accessRows = mod => [
@@ -45,6 +55,7 @@ const modPage = mod => {
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'Claude Code',
     license: mod.license,
+    ...(mod.stats?.updatedAt ? { dateModified: mod.stats.updatedAt } : {}),
     codeRepository: `https://github.com/${mod.repo}`,
     url,
   }
@@ -92,7 +103,7 @@ const modPage = mod => {
       <div class="panel">
         <div>
           <h1>${esc(mod.tagline)}</h1>
-          <div class="byline"><code>${esc(mod.name)}</code><span>by ${esc(authorOf(mod))}</span>${mod.own ? '<span class="ours">Ours</span>' : ''}<span>· ${esc(mod.where)}</span></div>
+          <div class="byline"><code>${esc(mod.name)}</code><span>by ${esc(authorOf(mod))}</span>${mod.own ? '<span class="ours">Ours</span>' : ''}<span>· ${esc(mod.where)}</span><span class="stats">${statsOf(mod)}</span></div>
         </div>
         <section>
           <h2>What you get</h2>
@@ -132,6 +143,7 @@ cpSync('site', out, { recursive: true })
 cpSync('data/mods.json', join(out, 'data/mods.json'))
 cpSync('data/categories.json', join(out, 'data/categories.json'))
 cpSync(resultsPath, join(out, 'data/results.json'))
+cpSync(statsPath, join(out, 'data/stats.json'))
 
 for (const mod of mods) {
   const dir = join(out, 'mods', mod.id)

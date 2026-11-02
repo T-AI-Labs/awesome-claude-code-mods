@@ -58,7 +58,7 @@ ${browse}
 
 Once a week, CI checks out the exact commit listed in [\`data/mods.json\`](data/mods.json) and runs \`claude plugin validate\` and the mod's own tests on the latest Claude Code, in a job without secrets.
 
-It is not a security audit. A passing run means the mod's own tests pass, not that every feature was used by hand. Tokens, network, commands and files come from the validator's static list of API calls. Screenshots come from the mods' authors. Mods run with your user permissions, so read the source of anything you install.
+It is not a security audit. A passing run means the mod's own tests pass, not that every feature was used by hand. Tokens, network, commands and files come from the validator's static list of API calls. Screenshots come from the mods' authors. The install commands fetch the author's latest version, which can be newer than the tested commit. Mods run with your user permissions, so read the source of anything you install.
 
 ## Suggest a mod
 
@@ -79,6 +79,7 @@ The site is plain HTML, CSS and JavaScript in [\`site/\`](site/). \`npm run chec
 npm install
 npm run posters
 npm run check
+npm run stats
 npm run assemble
 npm run readme
 \`\`\`

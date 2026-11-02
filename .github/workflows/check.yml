@@ -64,8 +64,13 @@ jobs:
         with:
           node-version: 22
 
+      - name: Read stars and update dates from each mod's repository
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/stats.mjs results/stats.json
+
       - name: Assemble the site
-        run: node scripts/assemble.mjs results/results.json public
+        run: node scripts/assemble.mjs results/results.json results/stats.json public
 
       - uses: actions/upload-pages-artifact@v3
         with:

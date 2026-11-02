@@ -51,6 +51,15 @@
           <label class="toggle"><input type="checkbox" id="no-tokens"><span>No tokens</span></label>
           <label class="toggle"><input type="checkbox" id="no-network"><span>No network</span></label>
         </div>
+        <label class="sort">
+          <span>Sort</span>
+          <select id="sort">
+            <option value="picks">Our picks</option>
+            <option value="stars">Most stars</option>
+            <option value="updated">Recently updated</option>
+            <option value="name">Name</option>
+          </select>
+        </label>
       </div>
       <div class="chips" id="chips" role="group" aria-label="Browse by category"></div>
     </section>
@@ -65,7 +74,7 @@
         <li><strong>Pinned and run</strong>Every week, CI checks out the exact commit listed here and runs <code>claude plugin validate</code> and the mod's own tests on the latest Claude Code.</li>
         <li><strong>Failures drop out</strong>A mod whose tests stop passing leaves the gallery until it passes again.</li>
       </ol>
-      <p class="limits"><strong>What this does not prove.</strong> It is not a security audit. A passing run means the mod's own tests pass, not that we used every feature by hand. Tokens, network and commands come from the validator's static list of API calls. Screenshots come from the mods' authors. Mods run with your user permissions, so read the source of anything you install.</p>
+      <p class="limits"><strong>What this does not prove.</strong> It is not a security audit. A passing run means the mod's own tests pass, not that we used every feature by hand. Tokens, network and commands come from the validator's static list of API calls. Screenshots come from the mods' authors. Stars and update dates come from each mod's repository at the last publish; stars count the whole repository, which can hold several mods. The install commands fetch the author's latest version, which can be newer than the tested commit. Mods run with your user permissions, so read the source of anything you install.</p>
     </section>
   </main>
 

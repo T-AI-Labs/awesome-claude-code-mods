@@ -3,7 +3,7 @@ import { setupTheme } from './theme.js'
 const CHECK = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 let CATEGORIES = []
-const state = { category: 'all', query: '', noTokens: false, noNetwork: false, active: null }
+const state = { category: 'all', query: '', noTokens: false, noNetwork: false, sort: 'picks', active: null }
 const canPlay = !matchMedia('(prefers-reduced-motion: reduce)').matches
 
 const $ = id => document.getElementById(id)
@@ -70,6 +70,31 @@ const factsOf = mod => [
     : { text: 'No network', kind: 'good' },
 ]
 
+const compact = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 })
+const relative = new Intl.RelativeTimeFormat('en', { numeric: 'auto' })
+const DAY = 24 * 60 * 60 * 1000
+
+const ageOf = date => {
+  const days = Math.round((new Date(date).getTime() - Date.now()) / DAY)
+
+  if (days > -14) return relative.format(days, 'day')
+  if (days > -60) return relative.format(Math.round(days / 7), 'week')
+  if (days > -365) return relative.format(Math.round(days / 30), 'month')
+
+  return relative.format(Math.round(days / 365), 'year')
+}
+
+const statsOf = mod => {
+  const { stars = null, updatedAt = null } = mod.stats ?? {}
+
+  if (stars === null && updatedAt === null) return null
+
+  return el('span', { class: 'stats' },
+    stars === null ? null : el('span', { title: 'Stars of the whole repository', 'aria-label': `${stars} stars` }, '★ ', el('b', {}, compact.format(stars))),
+    updatedAt === null ? null : el('span', { title: new Date(updatedAt).toLocaleDateString('en', { dateStyle: 'long' }) }, `Updated ${ageOf(updatedAt)}`),
+  )
+}
+
 const testsLabel = mod => `${mod.result.pass} ${mod.result.pass === 1 ? 'test passes' : 'tests pass'}`
 
 const card = mod => {
@@ -98,6 +123,7 @@ const card = mod => {
         el('code', {}, mod.name),
         el('span', {}, `by ${authorOf(mod)}`),
         mod.own ? el('span', { class: 'ours' }, 'Ours') : null,
+        statsOf(mod),
       ),
       el('ul', { class: 'facts', 'aria-label': 'Cost and access' },
         factsOf(mod).map(fact => el('li', { class: `fact ${fact.kind}` }, fact.text)),
@@ -127,13 +153,15 @@ const syncUrl = () => {
   if (state.query) params.set('q', state.query)
   if (state.noTokens) params.set('tokens', 'no')
   if (state.noNetwork) params.set('network', 'no')
+  if (state.sort !== 'picks') params.set('sort', state.sort)
 
   const query = params.toString()
   history.replaceState(null, '', `${location.pathname}${query ? `?${query}` : ''}${location.hash}`)
 }
 
 const reset = () => {
-  Object.assign(state, { category: 'all', query: '', noTokens: false, noNetwork: false })
+  Object.assign(state, { category: 'all', query: '', noTokens: false, noNetwork: false, sort: 'picks' })
+  $('sort').value = 'picks'
   $('search').value = ''
   $('no-tokens').checked = false
   $('no-network').checked = false
@@ -161,7 +189,14 @@ const renderChips = () => {
   )
 }
 
-const visible = () => mods.filter(mod => matches(mod, state))
+const SORTS = {
+  picks: () => 0,
+  name: (a, b) => a.name.localeCompare(b.name),
+  stars: (a, b) => (b.stats?.stars ?? -1) - (a.stats?.stars ?? -1),
+  updated: (a, b) => new Date(b.stats?.updatedAt ?? 0) - new Date(a.stats?.updatedAt ?? 0),
+}
+
+const visible = () => mods.filter(mod => matches(mod, state)).sort(SORTS[state.sort])
 
 const render = () => {
   const list = visible()
@@ -248,6 +283,7 @@ const openDetail = mod => {
           el('span', {}, `by ${authorOf(mod)}`),
           mod.own ? el('span', { class: 'ours' }, 'Ours') : null,
           el('span', {}, `· ${mod.where}`),
+          statsOf(mod),
         ),
       ),
       el('section', {},
@@ -311,6 +347,8 @@ const readUrl = () => {
   state.query = params.get('q') ?? ''
   state.noTokens = params.get('tokens') === 'no'
   state.noNetwork = params.get('network') === 'no'
+  state.sort = Object.hasOwn(SORTS, params.get('sort')) ? params.get('sort') : 'picks'
+  $('sort').value = state.sort
   $('search').value = state.query
   $('no-tokens').checked = state.noTokens
   $('no-network').checked = state.noNetwork
@@ -318,10 +356,11 @@ const readUrl = () => {
 
 setupTheme()
 
-const [catalog, results, categories] = await Promise.all([
+const [catalog, results, categories, stats] = await Promise.all([
   fetch('data/mods.json').then(response => response.json()),
   fetch('data/results.json').then(response => response.json()),
   fetch('data/categories.json').then(response => response.json()),
+  fetch('data/stats.json').then(response => response.json()),
 ])
 
 CATEGORIES = categories
@@ -329,7 +368,7 @@ readUrl()
 
 // A mod whose validation or tests fail leaves the gallery until it passes again.
 mods = catalog
-  .map(mod => ({ ...mod, result: results.mods[mod.id] }))
+  .map(mod => ({ ...mod, result: results.mods[mod.id], stats: stats.mods[mod.id] }))
   .filter(mod => mod.result?.validated && mod.result?.tested)
 
 $('checked').textContent = `Last checked ${new Date(results.checkedAt).toLocaleDateString('en', { dateStyle: 'medium' })} on Claude Code ${results.claudeVersion}.`
@@ -344,6 +383,10 @@ $('no-tokens').addEventListener('change', event => {
 })
 $('no-network').addEventListener('change', event => {
   state.noNetwork = event.target.checked
+  render()
+})
+$('sort').addEventListener('change', event => {
+  state.sort = event.target.value
   render()
 })
 
