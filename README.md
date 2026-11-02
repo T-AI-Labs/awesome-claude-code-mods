@@ -1,6 +1,6 @@
 # Tested Mods for Claude Code
 
-**[Browse the gallery](https://t-ai-labs.github.io/tested-claude-code-mods/)**
+**[Browse the gallery](https://t-ai-labs.github.io/awesome-claude-code-mods/)**
 
 Hand-picked Claude Code mods you can see before you install: a screenshot, what each one does for you, what it costs and whether its tests pass.
 
@@ -10,7 +10,7 @@ This is not a security audit. A passing run means the mod's own tests pass. Toke
 
 ## Suggest a mod
 
-[Open an issue](https://github.com/T-AI-Labs/tested-claude-code-mods/issues/new?title=Suggest%20a%20mod%3A%20) with a link to the mod. It should:
+[Open an issue](https://github.com/T-AI-Labs/awesome-claude-code-mods/issues/new?title=Suggest%20a%20mod%3A%20) with a link to the mod. It should:
 
 - solve a clear problem and install with one command from a marketplace
 - ship tests that pass under `claude plugin test`
