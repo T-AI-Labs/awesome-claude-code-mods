@@ -5,12 +5,14 @@ const SITE = 'https://t-ai-labs.github.io/awesome-claude-code-mods/'
 const NAME = 'Awesome Claude Code Mods'
 const REPO = 'https://github.com/T-AI-Labs/awesome-claude-code-mods'
 
-const [resultsPath, statsPath, out = 'public'] = process.argv.slice(2)
+const [resultsPath, statsPath, linksPath, out = 'public'] = process.argv.slice(2)
 const readJson = path => JSON.parse(readFileSync(path, 'utf8'))
 const results = readJson(resultsPath)
 const stats = readJson(statsPath)
+const { dead } = readJson(linksPath)
 const categories = readJson('data/categories.json')
-const mods = readJson('data/mods.json')
+const reachable = readJson('data/mods.json').filter(mod => !dead[mod.id])
+const mods = reachable
   .map(mod => ({ ...mod, result: results.mods[mod.id], stats: stats.mods[mod.id] }))
   .filter(mod => mod.result?.validated && mod.result?.tested)
 
@@ -141,7 +143,7 @@ const modPage = mod => {
 rmSync(out, { recursive: true, force: true })
 mkdirSync(join(out, 'data'), { recursive: true })
 cpSync('site', out, { recursive: true })
-cpSync('data/mods.json', join(out, 'data/mods.json'))
+writeFileSync(join(out, 'data/mods.json'), JSON.stringify(reachable))
 cpSync('data/categories.json', join(out, 'data/categories.json'))
 cpSync(resultsPath, join(out, 'data/results.json'))
 cpSync(statsPath, join(out, 'data/stats.json'))

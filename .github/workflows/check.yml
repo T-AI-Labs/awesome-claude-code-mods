@@ -8,12 +8,15 @@ on:
       - README.md
   schedule:
     - cron: "17 5 * * 1"
+    - cron: "43 2 * * *"
   workflow_dispatch:
 
 permissions: {}
 
 jobs:
   check:
+    # The nightly run only rechecks images and links, the mod tests stay weekly.
+    if: github.event.schedule != '43 2 * * *'
     runs-on: ubuntu-latest
     # This job runs third-party mod tests, so it holds no secrets and a read-only token.
     permissions:
@@ -41,9 +44,10 @@ jobs:
 
   publish:
     needs: check
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    if: ${{ !cancelled() && contains(fromJSON('["success", "skipped"]'), needs.check.result) && github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     permissions:
+      actions: read
       contents: read
       pages: write
       id-token: write
@@ -56,9 +60,20 @@ jobs:
           persist-credentials: false
 
       - uses: actions/download-artifact@v4
+        if: needs.check.result == 'success'
         with:
           name: results
           path: results
+
+      # Fork pull requests also upload "results", so only a run on this repository's main counts.
+      - name: Reuse the results of the last test run
+        if: needs.check.result == 'skipped'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          id=$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?name=results&per_page=100" --jq '[.artifacts[] | select(.expired == false and .workflow_run.head_branch == "main" and .workflow_run.head_repository_id == .workflow_run.repository_id)][0].id')
+          gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$id/zip" > results.zip
+          unzip -o results.zip -d results
 
       - uses: actions/setup-node@v4
         with:
@@ -69,8 +84,11 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/stats.mjs results/stats.json
 
+      - name: Check that each mod's images and links still exist
+        run: node scripts/links.mjs results/links.json
+
       - name: Assemble the site
-        run: node scripts/assemble.mjs results/results.json results/stats.json public
+        run: node scripts/assemble.mjs results/results.json results/stats.json results/links.json public
 
       - uses: actions/upload-pages-artifact@v3
         with:

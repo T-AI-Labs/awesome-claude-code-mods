@@ -6,7 +6,8 @@
     "check": "node scripts/check.mjs results/results.json",
     "og": "node scripts/og.mjs",
     "stats": "node scripts/stats.mjs results/stats.json",
-    "assemble": "node scripts/assemble.mjs results/results.json results/stats.json public",
+    "links": "node scripts/links.mjs results/links.json",
+    "assemble": "node scripts/assemble.mjs results/results.json results/stats.json results/links.json public",
     "readme": "node scripts/readme.mjs results/results.json"
   },
   "devDependencies": {
