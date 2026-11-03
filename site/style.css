@@ -151,7 +151,7 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
 
 .sort { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 6px 0 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; font-size: 14.5px; color: var(--muted); }
 .sort:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
-.sort select { min-height: 40px; padding: 0 4px; background: transparent; border: 0; outline: 0; color: var(--ink); font-size: 14.5px; cursor: pointer; }
+.sort select { min-height: 40px; max-width: 170px; padding: 0 4px; background: transparent; border: 0; outline: 0; color: var(--ink); font-size: 14.5px; cursor: pointer; }
 .sort option { background: var(--surface); color: var(--ink); }
 
 .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 0 calc(clamp(16px, 4vw, 40px) * -1); padding: 2px clamp(16px, 4vw, 40px); }
@@ -233,6 +233,8 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
 .byline code { color: var(--ink); }
 .stats { display: inline-flex; flex-wrap: wrap; gap: 2px 8px; }
 .stats b { font-weight: 560; color: var(--ink); font-variant-numeric: tabular-nums; }
+.author-link { position: relative; z-index: 1; padding: 0; background: none; border: 0; color: inherit; font-size: inherit; cursor: pointer; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.author-link:hover { color: var(--ink); text-decoration-color: currentcolor; }
 .ours { padding: 0 7px; background: var(--sunken); border-radius: 6px; font-size: 12px; }
 
 .facts { display: flex; flex-wrap: wrap; gap: 6px; margin: auto 0 0; padding: 0; list-style: none; }
@@ -367,8 +369,10 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
 @media (max-width: 480px) {
   .intro { padding: 22px 0 14px; }
   .search, .search input, .toggle span { min-height: 42px; height: 42px; }
-  .controls .toggles, .sort { flex: 1 1 100%; }
-  .sort select { flex: 1; }
+  .controls .toggles { flex: 1 1 100%; }
+  .sort { flex: 1 1 calc(50% - 5px); min-width: 0; padding-left: 8px; }
+  .sort span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .sort select { flex: 1; width: 100%; min-width: 0; max-width: none; }
   .toggle { flex: 1; }
   .toggle span { width: 100%; justify-content: center; }
   .search kbd { display: none; }

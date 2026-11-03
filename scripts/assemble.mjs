@@ -103,7 +103,7 @@ const modPage = mod => {
       <div class="panel">
         <div>
           <h1>${esc(mod.tagline)}</h1>
-          <div class="byline"><code>${esc(mod.name)}</code><span>by ${esc(authorOf(mod))}</span>${mod.own ? '<span class="ours">Ours</span>' : ''}<span>· ${esc(mod.where)}</span><span class="stats">${statsOf(mod)}</span></div>
+          <div class="byline"><code>${esc(mod.name)}</code><span>by <a href="../../?author=${encodeURIComponent(authorOf(mod))}">${esc(authorOf(mod))}</a></span>${mod.own ? '<span class="ours">Ours</span>' : ''}<span>· ${esc(mod.where)}</span><span class="stats">${statsOf(mod)}</span></div>
         </div>
         <section>
           <h2>What you get</h2>

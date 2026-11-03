@@ -3,7 +3,7 @@ import { setupTheme } from './theme.js'
 const CHECK = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 let CATEGORIES = []
-const state = { category: 'all', query: '', noTokens: false, noNetwork: false, sort: 'stars', active: null }
+const state = { category: 'all', query: '', noTokens: false, noNetwork: false, author: '', sort: 'stars', active: null }
 const canPlay = !matchMedia('(prefers-reduced-motion: reduce)').matches
 
 const $ = id => document.getElementById(id)
@@ -97,6 +97,13 @@ const statsOf = mod => {
 
 const testsLabel = mod => `${mod.result.pass} ${mod.result.pass === 1 ? 'test passes' : 'tests pass'}`
 
+const filterByAuthor = author => {
+  state.author = author
+  $('author').value = author
+  render()
+  $('count').scrollIntoView({ block: 'center' })
+}
+
 const card = mod => {
   const image = el('img', { src: posterOf(mod), alt: '', loading: 'lazy', decoding: 'async' })
   const recording = isRecording(mod.images[0])
@@ -121,7 +128,12 @@ const card = mod => {
       }, mod.tagline)),
       el('div', { class: 'byline' },
         el('code', {}, mod.name),
-        el('span', {}, `by ${authorOf(mod)}`),
+        el('span', {}, 'by ', el('button', {
+          class: 'author-link',
+          type: 'button',
+          title: `Show all mods by ${authorOf(mod)}`,
+          onclick: () => filterByAuthor(authorOf(mod)),
+        }, authorOf(mod))),
         mod.own ? el('span', { class: 'ours' }, 'Ours') : null,
         statsOf(mod),
       ),
@@ -136,8 +148,9 @@ const card = mod => {
   )
 }
 
-const matches = (mod, { category, query, noTokens, noNetwork }) => {
+const matches = (mod, { category, query, noTokens, noNetwork, author }) => {
   if (category !== 'all' && mod.category !== category) return false
+  if (author && authorOf(mod) !== author) return false
   if (noTokens && mod.result.usesTokens) return false
   if (noNetwork && mod.result.usesNetwork) return false
 
@@ -153,6 +166,7 @@ const syncUrl = () => {
   if (state.query) params.set('q', state.query)
   if (state.noTokens) params.set('tokens', 'no')
   if (state.noNetwork) params.set('network', 'no')
+  if (state.author) params.set('author', state.author)
   if (state.sort !== 'stars') params.set('sort', state.sort)
 
   const query = params.toString()
@@ -160,7 +174,8 @@ const syncUrl = () => {
 }
 
 const reset = () => {
-  Object.assign(state, { category: 'all', query: '', noTokens: false, noNetwork: false, sort: 'stars' })
+  Object.assign(state, { category: 'all', query: '', noTokens: false, noNetwork: false, author: '', sort: 'stars' })
+  $('author').value = ''
   $('sort').value = 'stars'
   $('search').value = ''
   $('no-tokens').checked = false
@@ -347,6 +362,7 @@ const readUrl = () => {
   state.query = params.get('q') ?? ''
   state.noTokens = params.get('tokens') === 'no'
   state.noNetwork = params.get('network') === 'no'
+  state.author = params.get('author') ?? ''
   state.sort = Object.hasOwn(SORTS, params.get('sort')) ? params.get('sort') : 'stars'
   $('sort').value = state.sort
   $('search').value = state.query
@@ -364,12 +380,26 @@ const [catalog, results, categories, stats] = await Promise.all([
 ])
 
 CATEGORIES = categories
-readUrl()
 
 // A mod whose validation or tests fail leaves the gallery until it passes again.
 mods = catalog
   .map(mod => ({ ...mod, result: results.mods[mod.id], stats: stats.mods[mod.id] }))
   .filter(mod => mod.result?.validated && mod.result?.tested)
+
+const authorCounts = new Map()
+
+for (const mod of mods) {
+  authorCounts.set(authorOf(mod), (authorCounts.get(authorOf(mod)) ?? 0) + 1)
+}
+
+$('author').append(
+  ...[...authorCounts]
+    .sort(([a], [b]) => a.localeCompare(b, 'en', { sensitivity: 'base' }))
+    .map(([author, count]) => el('option', { value: author }, `${author} (${count})`)),
+)
+readUrl()
+$('author').value = authorCounts.has(state.author) ? state.author : ''
+state.author = $('author').value
 
 $('checked').textContent = `Last checked ${new Date(results.checkedAt).toLocaleDateString('en', { dateStyle: 'medium' })} on Claude Code ${results.claudeVersion}.`
 
@@ -383,6 +413,10 @@ $('no-tokens').addEventListener('change', event => {
 })
 $('no-network').addEventListener('change', event => {
   state.noNetwork = event.target.checked
+  render()
+})
+$('author').addEventListener('change', event => {
+  state.author = event.target.value
   render()
 })
 $('sort').addEventListener('change', event => {
