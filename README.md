@@ -7,8 +7,8 @@
 <p align="center"><a href="https://github.com/T-AI-Labs/awesome-claude-code-mods/stargazers"><img src="https://img.shields.io/github/stars/T-AI-Labs/awesome-claude-code-mods?style=social" alt="Star this list on GitHub"></a></p>
 
 <table>
-<tr><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#flightdeck"><img src="site/posters/flightdeck.webp" alt="flightdeck: Watch every agent, permission check and turn on one live dashboard."></a></td><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#skins"><img src="site/posters/skins.webp" alt="skins: Give Claude Code a whole new look, with cards for code, diffs and tables."></a></td><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#secret-box"><img src="site/posters/secret-box.webp" alt="secret-box: Let Claude use your API keys without ever seeing them."></a></td></tr>
-<tr><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#prismantis"><img src="site/posters/prismantis.webp" alt="prismantis: Turn plain replies into colorful, easy-to-scan answers."></a></td><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#intermission"><img src="site/posters/intermission.webp" alt="intermission: Play Doom while Claude works, and get handed back when it is done."></a></td><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#usage-pane"><img src="https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/usage-pane.svg" alt="usage-pane: See where your tokens went, down to the prompts that cost the most."></a></td></tr>
+<tr><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#flightdeck"><img src="https://raw.githubusercontent.com/scasella/claude-flightdeck/f9c3c5230775109de4bd08c5c7a42112a6a2a885/docs/media/demo.gif" alt="flightdeck: Watch every agent, permission check and turn on one live dashboard."></a></td><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#skins"><img src="https://raw.githubusercontent.com/hellosverre/claude-skins/985ad63fdb3483bbb98f61cf57955cac3f56a449/docs/demo.gif" alt="skins: Give Claude Code a whole new look, with cards for code, diffs and tables."></a></td><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#secret-box"><img src="https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/secret-box/screenshot.png" alt="secret-box: Let Claude use your API keys without ever seeing them."></a></td></tr>
+<tr><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#prismantis"><img src="https://raw.githubusercontent.com/NahumLitvin/prismantis/e08bebe191e8f14334a17a1c684520dcf95bbeb4/docs/tour.gif" alt="prismantis: Turn plain replies into colorful, easy-to-scan answers."></a></td><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#intermission"><img src="https://raw.githubusercontent.com/jarrodwatts/intermission/8978f61efc890c13dcbed2d78ced224a6715feb8/intermission-preview.png" alt="intermission: Play Doom while Claude works, and get handed back when it is done."></a></td><td width="33%"><a href="https://t-ai-labs.github.io/awesome-claude-code-mods/#usage-pane"><img src="https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/usage-pane.svg" alt="usage-pane: See where your tokens went, down to the prompts that cost the most."></a></td></tr>
 </table>
 
 ## Browse by category
@@ -49,7 +49,6 @@ The site is plain HTML, CSS and JavaScript in [`site/`](site/). `npm run check` 
 
 ```bash
 npm install
-npm run posters
 npm run check
 npm run stats
 npm run assemble
@@ -58,4 +57,4 @@ npm run readme
 
 ## Credits
 
-Preview images belong to the mods' authors and come from their repositories under the license each mod names. This list is independent and not affiliated with Anthropic. The code in this repository is under the [MIT license](LICENSE).
+Preview images belong to the mods' authors and load directly from their repositories. This list is independent and not affiliated with Anthropic. The code in this repository is under the [MIT license](LICENSE).

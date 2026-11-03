@@ -4,7 +4,6 @@
   "type": "module",
   "scripts": {
     "check": "node scripts/check.mjs results/results.json",
-    "posters": "node scripts/posters.mjs",
     "og": "node scripts/og.mjs",
     "stats": "node scripts/stats.mjs results/stats.json",
     "assemble": "node scripts/assemble.mjs results/results.json results/stats.json public",

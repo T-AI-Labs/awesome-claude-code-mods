@@ -12,8 +12,6 @@ const mods = readJson('data/mods.json')
   .map(mod => ({ ...mod, result: results.mods[mod.id] }))
   .filter(mod => mod.result?.validated && mod.result?.tested)
 
-const imageOf = mod => (mod.images[0].endsWith('.svg') ? mod.images[0] : `site/posters/${mod.id}.webp`)
-
 const wall = WALL.map(id => mods.find(mod => mod.id === id)).filter(Boolean)
 const rows = []
 
@@ -22,7 +20,7 @@ for (let start = 0; start < wall.length; start += 3) {
     `<tr>${wall
       .slice(start, start + 3)
       // The hash opens the mod in the gallery and still lands on the gallery if the mod has dropped out since.
-      .map(mod => `<td width="33%"><a href="${SITE}#${mod.id}"><img src="${imageOf(mod)}" alt="${mod.name}: ${mod.tagline}"></a></td>`)
+      .map(mod => `<td width="33%"><a href="${SITE}#${mod.id}"><img src="${mod.images[0]}" alt="${mod.name}: ${mod.tagline}"></a></td>`)
       .join('')}</tr>`,
   )
 }
@@ -77,7 +75,6 @@ The site is plain HTML, CSS and JavaScript in [\`site/\`](site/). \`npm run chec
 
 \`\`\`bash
 npm install
-npm run posters
 npm run check
 npm run stats
 npm run assemble
@@ -86,7 +83,7 @@ npm run readme
 
 ## Credits
 
-Preview images belong to the mods' authors and come from their repositories under the license each mod names. This list is independent and not affiliated with Anthropic. The code in this repository is under the [MIT license](LICENSE).
+Preview images belong to the mods' authors and load directly from their repositories. This list is independent and not affiliated with Anthropic. The code in this repository is under the [MIT license](LICENSE).
 `
 
 writeFileSync('README.md', readme)

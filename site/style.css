@@ -206,20 +206,6 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
   backdrop-filter: blur(4px);
 }
 
-.play {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 9px;
-  background: rgb(10 12 10 / 78%);
-  color: #f1f0ea;
-  border-radius: 7px;
-  font-size: 12.5px;
-}
-
 .body { display: flex; flex-direction: column; flex: 1; gap: 10px; padding: 14px 16px 14px; }
 
 .tagline { margin: 0; font-size: 17px; line-height: 1.32; font-weight: 620; letter-spacing: -0.012em; text-wrap: pretty; }
@@ -360,10 +346,6 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
   .stage-main img { max-height: 42dvh; }
   .panel { max-height: none; overflow: visible; }
   .top-links a:not(:last-of-type) { display: none; }
-}
-
-@media (hover: none) {
-  .play { display: none; }
 }
 
 @media (max-width: 480px) {

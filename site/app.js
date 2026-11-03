@@ -4,7 +4,6 @@ const CHECK = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true
 
 let CATEGORIES = []
 const state = { category: 'all', query: '', noTokens: false, noNetwork: false, author: '', sort: 'stars', active: null }
-const canPlay = !matchMedia('(prefers-reduced-motion: reduce)').matches
 
 const $ = id => document.getElementById(id)
 
@@ -30,8 +29,6 @@ const icon = markup => {
 }
 
 const isRecording = url => /\.gif($|\?)/i.test(url)
-const isVector = url => /\.svg($|\?)/i.test(url)
-const posterOf = mod => (isVector(mod.images[0]) ? mod.images[0] : `posters/${mod.id}.webp`)
 const authorOf = mod => mod.repo.split('/')[0]
 const installOf = mod => `claude plugin marketplace add ${mod.repo}\nclaude plugin install ${mod.name}@${mod.marketplace}`
 const sourceOf = mod => `https://github.com/${mod.repo}/tree/${mod.commit}${mod.path === '.' ? '' : `/${mod.path}`}`
@@ -106,16 +103,10 @@ const filterByAuthor = author => {
 }
 
 const card = mod => {
-  const image = el('img', { src: posterOf(mod), alt: '', loading: 'lazy', decoding: 'async' })
-  const recording = isRecording(mod.images[0])
-  const play = () => { if (canPlay && recording) image.src = mod.images[0] }
-  const stop = () => { if (recording) image.src = posterOf(mod) }
-
-  return el('article', { class: 'card', onmouseenter: play, onmouseleave: stop, onfocusin: play, onfocusout: stop },
+  return el('article', { class: 'card' },
     el('div', { class: 'media' },
-      image,
+      el('img', { src: mod.images[0], alt: '', loading: 'lazy', decoding: 'async' }),
       el('span', { class: 'where' }, mod.where),
-      recording && canPlay ? el('span', { class: 'play', 'aria-hidden': 'true' }, '▶ Plays on hover') : null,
     ),
     el('div', { class: 'body' },
       el('h3', { class: 'tagline' }, el('a', {
@@ -268,7 +259,7 @@ const stageOf = mod => {
         credit.textContent = creditOf(mod, url)
         thumbs.forEach(other => other.setAttribute('aria-pressed', String(other === thumb)))
       },
-    }, el('img', { src: index === 0 ? posterOf(mod) : url, alt: '', loading: 'lazy' }))
+    }, el('img', { src: url, alt: '', loading: 'lazy' }))
 
     return thumb
   })
