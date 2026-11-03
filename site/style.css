@@ -268,6 +268,10 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
 .all-mods h2 { margin: 0 0 8px; font-size: 14px; color: var(--ink); }
 .all-mods ul { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0; padding: 0; list-style: none; }
 
+.legal { max-width: 780px; padding-top: clamp(26px, 5vw, 46px); padding-bottom: 36px; }
+.legal h1 { margin: 0 0 8px; font-size: clamp(30px, 4.4vw, 46px); letter-spacing: -0.028em; }
+.legal h2 { margin: 28px 0 6px; font-size: 19px; }
+.legal p { margin: 0 0 10px; }
 .mod-page { padding-bottom: 36px; }
 .crumb { margin: 18px 0 14px; font-size: 14px; color: var(--muted); }
 .mod-layout { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(320px, 1fr); gap: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }

@@ -133,7 +133,7 @@ const modPage = mod => {
     </div>
     ${related.length === 0 ? '' : `<section class="related"><h2>More in ${esc(category)}</h2><ul>${related.map(one => `<li><a href="../${one.id}/"><strong>${esc(one.name)}</strong><span>${esc(one.tagline)}</span></a></li>`).join('')}</ul></section>`}
   </main>
-  <footer class="bottom"><p>An independent list, not affiliated with Anthropic. Images belong to the mods' authors. Authors can <a href="${REPO}/issues/new?title=Remove%20a%20mod%3A%20">ask to have their mod removed</a>.</p></footer>
+  <footer class="bottom"><p>An independent list, not affiliated with Anthropic. Images belong to the mods' authors. Authors can <a href="${REPO}/issues/new?title=Remove%20a%20mod%3A%20">ask to have their mod removed</a>. <a href="../../privacy.html">Privacy</a></p></footer>
   <script src="../../mod.js" type="module"></script>
 </body>
 </html>
