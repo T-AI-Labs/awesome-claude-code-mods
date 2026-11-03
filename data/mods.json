@@ -1144,6 +1144,7 @@
     "commit": "b353ebb66d20ea2b3cc64039193f354e6f4759e2",
     "marketplace": "neteye-platform",
     "license": "Apache-2.0",
+    "licenseFile": "LICENSE-APACHE",
     "category": "read",
     "tagline": "Read diffs side by side, right in the terminal.",
     "where": "In the transcript",

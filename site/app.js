@@ -35,6 +35,7 @@ const posterOf = mod => (isVector(mod.images[0]) ? mod.images[0] : `posters/${mo
 const authorOf = mod => mod.repo.split('/')[0]
 const installOf = mod => `claude plugin marketplace add ${mod.repo}\nclaude plugin install ${mod.name}@${mod.marketplace}`
 const sourceOf = mod => `https://github.com/${mod.repo}/tree/${mod.commit}${mod.path === '.' ? '' : `/${mod.path}`}`
+const licenseOf = mod => `https://github.com/${mod.repo}/blob/${mod.commit}/${mod.licenseFile ?? 'LICENSE'}`
 
 const copyButton = (text, label = 'Copy install') => {
   const button = el('button', {
@@ -331,7 +332,7 @@ const openDetail = mod => {
         el('a', { href: `mods/${mod.id}/` }, 'Full page'),
         el('a', { href: sourceOf(mod), rel: 'noopener', target: '_blank' }, 'Source at the tested commit'),
         el('a', { href: `https://github.com/${mod.repo}`, rel: 'noopener', target: '_blank' }, 'Repository'),
-        el('span', {}, `${mod.license} license`),
+        el('a', { href: licenseOf(mod), rel: 'noopener', target: '_blank' }, `${mod.license} license`),
       ),
     ),
   )

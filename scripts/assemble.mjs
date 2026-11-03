@@ -20,6 +20,7 @@ const esc = text =>
 const authorOf = mod => mod.repo.split('/')[0]
 const installOf = mod => `claude plugin marketplace add ${mod.repo}\nclaude plugin install ${mod.name}@${mod.marketplace}`
 const sourceOf = mod => `https://github.com/${mod.repo}/tree/${mod.commit}${mod.path === '.' ? '' : `/${mod.path}`}`
+const licenseOf = mod => `https://github.com/${mod.repo}/blob/${mod.commit}/${mod.licenseFile ?? 'LICENSE'}`
 const compact = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 })
 const longDate = date => new Date(date).toLocaleDateString('en', { dateStyle: 'medium' })
 const statsOf = ({ stats: { stars = null, updatedAt = null } = {} }) =>
@@ -124,13 +125,13 @@ const modPage = mod => {
         <div class="links">
           <a href="${sourceOf(mod)}" rel="noopener">Source at the tested commit</a>
           <a href="https://github.com/${mod.repo}" rel="noopener">Repository</a>
-          <span>${esc(mod.license)} license</span>
+          <a href="${licenseOf(mod)}" rel="noopener">${esc(mod.license)} license</a>
         </div>
       </div>
     </div>
     ${related.length === 0 ? '' : `<section class="related"><h2>More in ${esc(category)}</h2><ul>${related.map(one => `<li><a href="../${one.id}/"><strong>${esc(one.name)}</strong><span>${esc(one.tagline)}</span></a></li>`).join('')}</ul></section>`}
   </main>
-  <footer class="bottom"><p>An independent list, not affiliated with Anthropic. Images belong to the mods' authors.</p></footer>
+  <footer class="bottom"><p>An independent list, not affiliated with Anthropic. Images belong to the mods' authors. Authors can <a href="${REPO}/issues/new?title=Remove%20a%20mod%3A%20">ask to have their mod removed</a>.</p></footer>
   <script src="../../mod.js" type="module"></script>
 </body>
 </html>
