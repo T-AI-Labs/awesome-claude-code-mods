@@ -2,7 +2,7 @@ import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 const SITE = 'https://t-ai-labs.github.io/awesome-claude-code-mods/'
-const NAME = 'Claude Code Mods Gallery'
+const NAME = 'Awesome Claude Code Mods'
 const REPO = 'https://github.com/T-AI-Labs/awesome-claude-code-mods'
 
 const [resultsPath, statsPath, out = 'public'] = process.argv.slice(2)
