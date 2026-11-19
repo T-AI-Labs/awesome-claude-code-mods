@@ -28,7 +28,7 @@
 
 ## How the testing works
 
-Once a week, CI checks out the exact commit listed in [`data/mods.json`](data/mods.json) and runs `claude plugin validate` and the mod's own tests on the latest Claude Code, in a job without secrets. A failed test run gets one retry. Every night CI also checks each mod's images and links. A mod with a link that no longer exists leaves the gallery until it works again.
+Once a week, CI checks out the exact commit listed in [`data/mods.json`](data/mods.json) and runs `claude plugin validate` and the mod's own tests on the latest Claude Code, in a job without secrets. A failed test run gets one retry. Every night CI also checks each mod's images and links. A mod with a link that no longer exists leaves the gallery until it works again. Every Monday a workflow moves each mod whose folder, images or license changed to its newest commit, in a single pull request that each run replaces and that is tested before it is merged.
 
 It is not a security audit. A passing run means the mod's own tests pass, not that every feature was used by hand. Tokens, network, commands and files come from the validator's static list of API calls. Screenshots come from the mods' authors. The install commands fetch the author's latest version, which can be newer than the tested commit. Mods run with your user permissions, so read the source of anything you install.
 
