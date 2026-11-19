@@ -4,7 +4,7 @@
     "name": "context-usage",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "context-usage",
-    "commit": "098dafc072329b331b6b6810c18b4bf115a69884",
+    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "cost",
@@ -16,7 +16,49 @@
       "Your 5-hour and weekly limits, with the time until each resets"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/context-usage.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/context-usage.svg"
+    ],
+    "own": true
+  },
+  {
+    "id": "context-meter",
+    "name": "context-meter",
+    "repo": "T-AI-Labs/claude-code-mods",
+    "path": "context-meter",
+    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "marketplace": "T-AI-Labs",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "Watch the context fill and compact at the point you pick.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Context fill against the auto-compact threshold, yellow and red as it nears",
+      "An Auto dropdown: Off, 97, 90, 70, 60 or 50 %",
+      "Compact and Clear one click away"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/context-meter.svg"
+    ],
+    "own": true
+  },
+  {
+    "id": "usage-limits",
+    "name": "usage-limits",
+    "repo": "T-AI-Labs/claude-code-mods",
+    "path": "usage-limits",
+    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "marketplace": "T-AI-Labs",
+    "license": "MIT",
+    "category": "cost",
+    "tagline": "See how much of your 5-hour and weekly limits is left.",
+    "where": "Above the prompt",
+    "benefits": [
+      "A gauge per rate-limit window with the percentage used",
+      "The time until each window resets",
+      "Yellow from 75 %, red from 90 %"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/usage-limits.svg"
     ],
     "own": true
   },
@@ -25,7 +67,7 @@
     "name": "usage-pane",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "usage-pane",
-    "commit": "098dafc072329b331b6b6810c18b4bf115a69884",
+    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "cost",
@@ -37,7 +79,7 @@
       "History of your 5-hour and weekly limits"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/usage-pane.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/usage-pane.svg"
     ],
     "own": true
   },
@@ -46,7 +88,7 @@
     "name": "cache-meter",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "cache-meter",
-    "commit": "098dafc072329b331b6b6810c18b4bf115a69884",
+    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "cost",
@@ -58,7 +100,7 @@
       "A Keep warm switch for when you step away"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/098dafc072329b331b6b6810c18b4bf115a69884/.docs/cache-meter.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/cache-meter.svg"
     ],
     "own": true
   },
@@ -228,6 +270,50 @@
     ],
     "images": [
       "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/test-explorer.svg"
+    ],
+    "own": true
+  },
+  {
+    "id": "command-center",
+    "name": "command-center",
+    "repo": "T-AI-Labs/claude-code-mods",
+    "path": "command-center",
+    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "marketplace": "T-AI-Labs",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Pick an agent, skill or command from dropdowns and insert or run it.",
+    "where": "Above the prompt",
+    "benefits": [
+      "Source, Agent and Skill/Command dropdowns side by side",
+      "Insert puts the pick into the prompt, Run starts it",
+      "The recently used come first"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/command-center.svg"
+    ],
+    "own": true
+  },
+  {
+    "id": "t-ai-labs-task-board",
+    "name": "task-board",
+    "repo": "T-AI-Labs/claude-code-mods",
+    "path": "task-board",
+    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "marketplace": "T-AI-Labs",
+    "license": "MIT",
+    "category": "flow",
+    "tagline": "Turn ideas that come up while Claude works into tasks on a board per project.",
+    "where": "Above the prompt and side pane",
+    "benefits": [
+      "A row above the prompt that creates tasks, also while a turn runs",
+      "Lanes for ideas, todo, in progress and done, with keys and priority",
+      "A prompt that names a task key takes the task along for Claude"
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/task-board.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/task-board-row.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/task-board-task.svg"
     ],
     "own": true
   },
