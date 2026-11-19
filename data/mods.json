@@ -190,7 +190,7 @@
     "name": "catalog-pane",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "catalog-pane",
-    "commit": "d78d9855eeed8bbbaf349dfedd335cadab3efd16",
+    "commit": "4dbef8aa4208ae22ef9946f0b9026d2979c1e36d",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "overview",
@@ -203,8 +203,10 @@
       "Buttons to insert, run, update, disable or uninstall"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/d78d9855eeed8bbbaf349dfedd335cadab3efd16/.docs/catalog-pane.svg",
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/d78d9855eeed8bbbaf349dfedd335cadab3efd16/.docs/catalog-pane-detail.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/4dbef8aa4208ae22ef9946f0b9026d2979c1e36d/.docs/catalog-pane.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/4dbef8aa4208ae22ef9946f0b9026d2979c1e36d/.docs/catalog-pane-claude.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/4dbef8aa4208ae22ef9946f0b9026d2979c1e36d/.docs/catalog-pane-gallery.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/4dbef8aa4208ae22ef9946f0b9026d2979c1e36d/.docs/catalog-pane-detail.svg"
     ],
     "own": true
   },
@@ -213,7 +215,7 @@
     "name": "test-explorer",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "test-explorer",
-    "commit": "d78d9855eeed8bbbaf349dfedd335cadab3efd16",
+    "commit": "4dbef8aa4208ae22ef9946f0b9026d2979c1e36d",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "flow",
@@ -225,7 +227,7 @@
       "Fix hands a failing test to Claude"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/d78d9855eeed8bbbaf349dfedd335cadab3efd16/.docs/test-explorer.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/4dbef8aa4208ae22ef9946f0b9026d2979c1e36d/.docs/test-explorer.svg"
     ],
     "own": true
   },
