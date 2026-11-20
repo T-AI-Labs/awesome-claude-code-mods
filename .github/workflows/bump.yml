@@ -1,0 +1,63 @@
+name: Bump pinned commits
+
+on:
+  schedule:
+    # Monday, before the weekly test run at 05:17.
+    - cron: "11 4 * * 1"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: bump
+  cancel-in-progress: false
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    # Runs no mod code: it only reads the GitHub API and HEAD-checks URLs, so it may write.
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    env:
+      BRANCH: auto/bump-pinned-commits
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Move each mod to its newest commit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/bump.mjs results/bump.md
+
+      - name: Keep one bump pull request at most
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+
+          if git diff --quiet -- data/mods.json; then
+            if [ -n "$open" ]; then
+              gh pr close "$open" --delete-branch --comment "Every mod is on its newest commit again, so this pull request is no longer needed."
+            fi
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$BRANCH"
+          git commit -q -am "Pin mods to their newest commits"
+          git push -q --force origin "$BRANCH"
+
+          if [ -n "$open" ]; then
+            gh pr edit "$open" --body-file results/bump.md
+          else
+            gh pr create --base main --head "$BRANCH" --title "Pin mods to their newest commits" --body-file results/bump.md
+          fi
+
+          # A push made with this token starts no workflow, but a dispatch does: test the new commits on the branch.
+          gh workflow run check.yml --ref "$BRANCH"
