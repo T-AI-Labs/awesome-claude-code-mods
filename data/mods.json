@@ -257,19 +257,19 @@
     "name": "test-explorer",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "test-explorer",
-    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "commit": "2aebfde6a15ce2b9227d94369646b5ecdb372ab7",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "flow",
-    "tagline": "See your project's tests by status and run them with a press.",
+    "tagline": "See your project's tests by status and run them with a press, in a dozen test tools.",
     "where": "Side pane",
     "benefits": [
-      "Finds .NET, pytest, Vitest and Claude Code mod tests",
+      "Finds .NET, pytest, Vitest, Jest, Mocha, Playwright, Go, Rust, Maven, Gradle, RSpec and Claude Code mod tests",
       "A tree of tool, project, file and test with status, duration and a pass bar",
       "Fix hands a failing test to Claude"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/test-explorer.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/2aebfde6a15ce2b9227d94369646b5ecdb372ab7/.docs/test-explorer.svg"
     ],
     "own": true
   },
