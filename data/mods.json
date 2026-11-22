@@ -4,7 +4,7 @@
     "name": "context-usage",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "context-usage",
-    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "commit": "3f4f82709f1e206c89bf1eb7571f7222bcf2981e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "cost",
@@ -16,7 +16,8 @@
       "Your 5-hour and weekly limits, with the time until each resets"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/context-usage.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/context-usage-terminal.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/context-usage.svg"
     ],
     "own": true
   },
@@ -25,7 +26,7 @@
     "name": "context-meter",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "context-meter",
-    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "commit": "3f4f82709f1e206c89bf1eb7571f7222bcf2981e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "cost",
@@ -37,7 +38,8 @@
       "Compact and Clear one click away"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/context-meter.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/context-meter-terminal.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/context-meter.svg"
     ],
     "own": true
   },
@@ -46,7 +48,7 @@
     "name": "usage-limits",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "usage-limits",
-    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "commit": "3f4f82709f1e206c89bf1eb7571f7222bcf2981e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "cost",
@@ -58,7 +60,8 @@
       "Yellow from 75 %, red from 90 %"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/usage-limits.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/usage-limits-terminal.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/usage-limits.svg"
     ],
     "own": true
   },
@@ -67,7 +70,7 @@
     "name": "usage-pane",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "usage-pane",
-    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "commit": "3f4f82709f1e206c89bf1eb7571f7222bcf2981e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "cost",
@@ -79,7 +82,8 @@
       "History of your 5-hour and weekly limits"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/usage-pane.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/usage-pane-terminal.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/usage-pane.svg"
     ],
     "own": true
   },
@@ -88,7 +92,7 @@
     "name": "cache-meter",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "cache-meter",
-    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "commit": "3f4f82709f1e206c89bf1eb7571f7222bcf2981e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "cost",
@@ -100,7 +104,8 @@
       "A Keep warm switch for when you step away"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/cache-meter.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/cache-meter-terminal.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/cache-meter.svg"
     ],
     "own": true
   },
@@ -232,7 +237,7 @@
     "name": "catalog-pane",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "catalog-pane",
-    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "commit": "3f4f82709f1e206c89bf1eb7571f7222bcf2981e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "overview",
@@ -245,10 +250,11 @@
       "Buttons to insert, run, update, disable or uninstall"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/catalog-pane.svg",
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/catalog-pane-claude.svg",
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/catalog-pane-gallery.svg",
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/catalog-pane-detail.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/catalog-pane-terminal.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/catalog-pane.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/catalog-pane-claude.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/catalog-pane-gallery.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/catalog-pane-detail.svg"
     ],
     "own": true
   },
@@ -257,7 +263,7 @@
     "name": "test-explorer",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "test-explorer",
-    "commit": "2aebfde6a15ce2b9227d94369646b5ecdb372ab7",
+    "commit": "3f4f82709f1e206c89bf1eb7571f7222bcf2981e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "flow",
@@ -269,7 +275,8 @@
       "Fix hands a failing test to Claude"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/2aebfde6a15ce2b9227d94369646b5ecdb372ab7/.docs/test-explorer.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/test-explorer-terminal.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/test-explorer.svg"
     ],
     "own": true
   },
@@ -278,7 +285,7 @@
     "name": "command-center",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "command-center",
-    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "commit": "3f4f82709f1e206c89bf1eb7571f7222bcf2981e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "flow",
@@ -290,7 +297,8 @@
       "The recently used come first"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/command-center.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/command-center-terminal.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/command-center.svg"
     ],
     "own": true
   },
@@ -299,7 +307,7 @@
     "name": "task-board",
     "repo": "T-AI-Labs/claude-code-mods",
     "path": "task-board",
-    "commit": "280c68d0150ba868be615264303cd645489f2a0e",
+    "commit": "3f4f82709f1e206c89bf1eb7571f7222bcf2981e",
     "marketplace": "T-AI-Labs",
     "license": "MIT",
     "category": "flow",
@@ -311,9 +319,10 @@
       "A prompt that names a task key takes the task along for Claude"
     ],
     "images": [
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/task-board.svg",
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/task-board-row.svg",
-      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/280c68d0150ba868be615264303cd645489f2a0e/.docs/task-board-task.svg"
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/task-board-terminal.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/task-board.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/task-board-row.svg",
+      "https://raw.githubusercontent.com/T-AI-Labs/claude-code-mods/3f4f82709f1e206c89bf1eb7571f7222bcf2981e/.docs/task-board-task.svg"
     ],
     "own": true
   },
