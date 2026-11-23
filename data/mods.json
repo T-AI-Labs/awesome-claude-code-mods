@@ -114,7 +114,7 @@
     "name": "cache-clock",
     "repo": "ray-amjad/claude-code-mods",
     "path": "plugins/cache-clock",
-    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "commit": "5d6bd156c7586c4b030157a1a2e8b7214b238501",
     "marketplace": "claude-code-mods",
     "license": "MIT",
     "category": "cost",
@@ -125,7 +125,7 @@
       "A countdown until the prompt cache goes cold"
     ],
     "images": [
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/cache-clock/screenshot.png"
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/cache-clock/screenshot.png"
     ]
   },
   {
@@ -133,7 +133,7 @@
     "name": "agent-usage-guard",
     "repo": "rbartoli/agent-usage-guard",
     "path": ".",
-    "commit": "e8f410440a066e9a1861e00d2e508902d9fcbaed",
+    "commit": "02594c2620be9eb60c32e2f77d9d512d9f61b205",
     "marketplace": "agent-usage-guard",
     "license": "MIT",
     "category": "cost",
@@ -174,7 +174,7 @@
     "name": "ccswap",
     "repo": "errhythm/ccswap",
     "path": "mod",
-    "commit": "9913f09a23d074cdddb1fbf8f3a5b2b3e9bafa81",
+    "commit": "c901d562cac9480620b7f216c40ca28966489e36",
     "marketplace": "ccswap",
     "license": "MIT",
     "category": "cost",
@@ -186,7 +186,7 @@
       "A quota band above the prompt"
     ],
     "images": [
-      "https://raw.githubusercontent.com/errhythm/ccswap/9913f09a23d074cdddb1fbf8f3a5b2b3e9bafa81/assets/mod-pane-claude.png"
+      "https://raw.githubusercontent.com/errhythm/ccswap/c901d562cac9480620b7f216c40ca28966489e36/assets/mod-pane-claude.png"
     ]
   },
   {
@@ -194,7 +194,7 @@
     "name": "flightdeck",
     "repo": "scasella/claude-flightdeck",
     "path": ".",
-    "commit": "f9c3c5230775109de4bd08c5c7a42112a6a2a885",
+    "commit": "626cc0b46d417f81bbff9f5ba3b49abaf8912a85",
     "marketplace": "claude-flightdeck",
     "license": "MIT",
     "category": "overview",
@@ -206,9 +206,9 @@
       "A receipt per turn and a session log, all from real session events"
     ],
     "images": [
-      "https://raw.githubusercontent.com/scasella/claude-flightdeck/f9c3c5230775109de4bd08c5c7a42112a6a2a885/docs/media/demo.gif",
-      "https://raw.githubusercontent.com/scasella/claude-flightdeck/f9c3c5230775109de4bd08c5c7a42112a6a2a885/docs/media/docked-session.png",
-      "https://raw.githubusercontent.com/scasella/claude-flightdeck/f9c3c5230775109de4bd08c5c7a42112a6a2a885/docs/media/docked-pane.png"
+      "https://raw.githubusercontent.com/scasella/claude-flightdeck/626cc0b46d417f81bbff9f5ba3b49abaf8912a85/docs/media/demo.gif",
+      "https://raw.githubusercontent.com/scasella/claude-flightdeck/626cc0b46d417f81bbff9f5ba3b49abaf8912a85/docs/media/docked-session.png",
+      "https://raw.githubusercontent.com/scasella/claude-flightdeck/626cc0b46d417f81bbff9f5ba3b49abaf8912a85/docs/media/docked-pane.png"
     ]
   },
   {
@@ -216,7 +216,7 @@
     "name": "filetree",
     "repo": "data-goblin/claude-code-filetree",
     "path": ".",
-    "commit": "0ad31a61a18369cb6461a56f7ade47a9e2d18dfe",
+    "commit": "1fdc3a963f2dc22a939f661ff0ff5a76646c9112",
     "marketplace": "claude-code-filetree",
     "license": "MIT",
     "category": "overview",
@@ -227,9 +227,9 @@
       "Shows where in the files the work happens"
     ],
     "images": [
-      "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/0ad31a61a18369cb6461a56f7ade47a9e2d18dfe/media/filetree-shimmer.gif",
-      "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/0ad31a61a18369cb6461a56f7ade47a9e2d18dfe/docs/media/preview.gif",
-      "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/0ad31a61a18369cb6461a56f7ade47a9e2d18dfe/docs/media/treemap.gif"
+      "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/1fdc3a963f2dc22a939f661ff0ff5a76646c9112/media/filetree-shimmer.gif",
+      "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/1fdc3a963f2dc22a939f661ff0ff5a76646c9112/docs/media/preview.gif",
+      "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/1fdc3a963f2dc22a939f661ff0ff5a76646c9112/docs/media/treemap.gif"
     ]
   },
   {
@@ -331,7 +331,7 @@
     "name": "secret-box",
     "repo": "ray-amjad/claude-code-mods",
     "path": "plugins/secret-box",
-    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "commit": "5d6bd156c7586c4b030157a1a2e8b7214b238501",
     "marketplace": "claude-code-mods",
     "license": "MIT",
     "category": "safety",
@@ -343,9 +343,9 @@
       "Committing .env is refused"
     ],
     "images": [
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/secret-box/screenshot.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/secret-box/images/use.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/secret-box/images/guard.png"
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/secret-box/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/secret-box/images/use.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/secret-box/images/guard.png"
     ]
   },
   {
@@ -353,7 +353,7 @@
     "name": "transcript-redactor",
     "repo": "ray-amjad/claude-code-mods",
     "path": "plugins/transcript-redactor",
-    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "commit": "5d6bd156c7586c4b030157a1a2e8b7214b238501",
     "marketplace": "claude-code-mods",
     "license": "MIT",
     "category": "safety",
@@ -364,9 +364,9 @@
       "Puts the real value back when a tool call needs it"
     ],
     "images": [
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/transcript-redactor/screenshot.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/transcript-redactor/images/round-trip.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/transcript-redactor/images/hidden-kept.png"
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/transcript-redactor/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/transcript-redactor/images/round-trip.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/transcript-redactor/images/hidden-kept.png"
     ]
   },
   {
@@ -395,7 +395,7 @@
     "name": "skins",
     "repo": "hellosverre/claude-skins",
     "path": ".",
-    "commit": "985ad63fdb3483bbb98f61cf57955cac3f56a449",
+    "commit": "a4cdb19de27e08f985e4842d43cd19ccda60ffea",
     "marketplace": "hellosverre-mods",
     "license": "MIT",
     "category": "read",
@@ -407,9 +407,9 @@
       "Tool rows that fold open, a usage band and a calm mode"
     ],
     "images": [
-      "https://raw.githubusercontent.com/hellosverre/claude-skins/985ad63fdb3483bbb98f61cf57955cac3f56a449/docs/demo.gif",
-      "https://raw.githubusercontent.com/hellosverre/claude-skins/985ad63fdb3483bbb98f61cf57955cac3f56a449/docs/previews/hero-dark.svg",
-      "https://raw.githubusercontent.com/hellosverre/claude-skins/985ad63fdb3483bbb98f61cf57955cac3f56a449/docs/previews/spinners-dark.svg"
+      "https://raw.githubusercontent.com/hellosverre/claude-skins/a4cdb19de27e08f985e4842d43cd19ccda60ffea/docs/demo.gif",
+      "https://raw.githubusercontent.com/hellosverre/claude-skins/a4cdb19de27e08f985e4842d43cd19ccda60ffea/docs/previews/hero-dark.svg",
+      "https://raw.githubusercontent.com/hellosverre/claude-skins/a4cdb19de27e08f985e4842d43cd19ccda60ffea/docs/previews/spinners-dark.svg"
     ]
   },
   {
@@ -458,7 +458,7 @@
     "name": "cc-intelligent-ui",
     "repo": "razorback16/cc-intelligent-ui",
     "path": ".",
-    "commit": "18f2e67b1765f2abffc05e8daa4a7039f669de38",
+    "commit": "0731fc0b3d563e4ac28f7cba5d4421068f40b73b",
     "marketplace": "razorback16",
     "license": "MIT",
     "category": "read",
@@ -469,9 +469,9 @@
       "Live Typst for diagrams, charts and math"
     ],
     "images": [
-      "https://raw.githubusercontent.com/razorback16/cc-intelligent-ui/18f2e67b1765f2abffc05e8daa4a7039f669de38/outcomes/out/hero-light.gif",
-      "https://raw.githubusercontent.com/razorback16/cc-intelligent-ui/18f2e67b1765f2abffc05e8daa4a7039f669de38/outcomes/out/0-hero-2-latency.png",
-      "https://raw.githubusercontent.com/razorback16/cc-intelligent-ui/18f2e67b1765f2abffc05e8daa4a7039f669de38/outcomes/out/6-diagrams-light.png"
+      "https://raw.githubusercontent.com/razorback16/cc-intelligent-ui/0731fc0b3d563e4ac28f7cba5d4421068f40b73b/outcomes/out/hero-light.gif",
+      "https://raw.githubusercontent.com/razorback16/cc-intelligent-ui/0731fc0b3d563e4ac28f7cba5d4421068f40b73b/outcomes/out/0-hero-2-latency.png",
+      "https://raw.githubusercontent.com/razorback16/cc-intelligent-ui/0731fc0b3d563e4ac28f7cba5d4421068f40b73b/outcomes/out/6-diagrams-light.png"
     ]
   },
   {
@@ -497,7 +497,7 @@
     "name": "human-in-the-loop",
     "repo": "tzafrir/human-in-the-loop",
     "path": ".",
-    "commit": "bf8233cd24e9d038516b307f7f13e2449aba1b60",
+    "commit": "d8df5ff0ddc0dd00ff4d5e0955374de618dffdd4",
     "marketplace": "human-in-the-loop",
     "license": "MIT",
     "category": "flow",
@@ -509,7 +509,7 @@
       "You answer or reject each one"
     ],
     "images": [
-      "https://raw.githubusercontent.com/tzafrir/human-in-the-loop/bf8233cd24e9d038516b307f7f13e2449aba1b60/media/hero.gif"
+      "https://raw.githubusercontent.com/tzafrir/human-in-the-loop/d8df5ff0ddc0dd00ff4d5e0955374de618dffdd4/media/hero.gif"
     ]
   },
   {
@@ -517,7 +517,7 @@
     "name": "decision-tree",
     "repo": "ray-amjad/claude-code-mods",
     "path": "plugins/decision-tree",
-    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "commit": "5d6bd156c7586c4b030157a1a2e8b7214b238501",
     "marketplace": "claude-code-mods",
     "license": "MIT",
     "category": "flow",
@@ -528,8 +528,8 @@
       "Explore any option, or your own, in a real forked session"
     ],
     "images": [
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/decision-tree/branches.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/decision-tree/diagram.png"
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/decision-tree/branches.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/decision-tree/diagram.png"
     ]
   },
   {
@@ -537,7 +537,7 @@
     "name": "diagram-pane",
     "repo": "ray-amjad/claude-code-mods",
     "path": "plugins/diagram-pane",
-    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "commit": "5d6bd156c7586c4b030157a1a2e8b7214b238501",
     "marketplace": "claude-code-mods",
     "license": "MIT",
     "category": "flow",
@@ -548,9 +548,9 @@
       "Go into boxes and change them"
     ],
     "images": [
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/diagram-pane/screenshot.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/diagram-pane/images/pinned.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/diagram-pane/images/gate.png"
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/diagram-pane/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/diagram-pane/images/pinned.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/diagram-pane/images/gate.png"
     ]
   },
   {
@@ -558,7 +558,7 @@
     "name": "prompt-bouncer",
     "repo": "ray-amjad/claude-code-mods",
     "path": "plugins/prompt-bouncer",
-    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "commit": "5d6bd156c7586c4b030157a1a2e8b7214b238501",
     "marketplace": "claude-code-mods",
     "license": "MIT",
     "category": "flow",
@@ -569,9 +569,9 @@
       "Suggests your project's own terms"
     ],
     "images": [
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/prompt-bouncer/screenshot.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/prompt-bouncer/images/quick.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/prompt-bouncer/images/how-it-works.png"
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/prompt-bouncer/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/prompt-bouncer/images/quick.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/prompt-bouncer/images/how-it-works.png"
     ]
   },
   {
@@ -579,7 +579,7 @@
     "name": "dream-pass",
     "repo": "ray-amjad/claude-code-mods",
     "path": "plugins/dream-pass",
-    "commit": "4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df",
+    "commit": "5d6bd156c7586c4b030157a1a2e8b7214b238501",
     "marketplace": "claude-code-mods",
     "license": "MIT",
     "category": "flow",
@@ -591,9 +591,9 @@
       "Keeps a backup you can restore"
     ],
     "images": [
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/dream-pass/screenshot.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/dream-pass/images/before-after.png",
-      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/4ee4b4c1be3fa71ac2d0f12dd0fc887ea8d561df/plugins/dream-pass/images/gate.png"
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/dream-pass/screenshot.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/dream-pass/images/before-after.png",
+      "https://raw.githubusercontent.com/ray-amjad/claude-code-mods/5d6bd156c7586c4b030157a1a2e8b7214b238501/plugins/dream-pass/images/gate.png"
     ]
   },
   {
@@ -601,7 +601,7 @@
     "name": "brewmod-reminders",
     "repo": "kochetkov-ma/claude-brewcode",
     "path": "brewmod-reminders",
-    "commit": "61dfaa8bdbcb59aa8a7b45570dd71885ccae52f8",
+    "commit": "4488e70de97f421866a192a47be4023c2a512085",
     "marketplace": "claude-brewcode",
     "license": "MIT",
     "category": "flow",
@@ -613,7 +613,7 @@
       "Nothing runs unasked"
     ],
     "images": [
-      "https://raw.githubusercontent.com/kochetkov-ma/claude-brewcode/61dfaa8bdbcb59aa8a7b45570dd71885ccae52f8/assets/brewmods/reminders.gif"
+      "https://raw.githubusercontent.com/kochetkov-ma/claude-brewcode/4488e70de97f421866a192a47be4023c2a512085/assets/brewmods/reminders.gif"
     ]
   },
   {
@@ -621,7 +621,7 @@
     "name": "show-your-work",
     "repo": "iamumeransari/claude-show-your-work",
     "path": ".",
-    "commit": "5f218cc1ebb57c0df70c3f7e61866df5c5d67a51",
+    "commit": "71e546044e3ba61b98a6938a03270da791f9ca2e",
     "marketplace": "iamumeransari",
     "license": "MIT",
     "category": "flow",
@@ -633,9 +633,9 @@
       "Synced before and after QA"
     ],
     "images": [
-      "https://raw.githubusercontent.com/iamumeransari/claude-show-your-work/5f218cc1ebb57c0df70c3f7e61866df5c5d67a51/docs/qa-product.jpg",
-      "https://raw.githubusercontent.com/iamumeransari/claude-show-your-work/5f218cc1ebb57c0df70c3f7e61866df5c5d67a51/docs/homepage.jpg",
-      "https://raw.githubusercontent.com/iamumeransari/claude-show-your-work/5f218cc1ebb57c0df70c3f7e61866df5c5d67a51/docs/concepts.jpg"
+      "https://raw.githubusercontent.com/iamumeransari/claude-show-your-work/71e546044e3ba61b98a6938a03270da791f9ca2e/docs/qa-product.jpg",
+      "https://raw.githubusercontent.com/iamumeransari/claude-show-your-work/71e546044e3ba61b98a6938a03270da791f9ca2e/docs/homepage.jpg",
+      "https://raw.githubusercontent.com/iamumeransari/claude-show-your-work/71e546044e3ba61b98a6938a03270da791f9ca2e/docs/concepts.jpg"
     ]
   },
   {
@@ -643,7 +643,7 @@
     "name": "hal-grammar-check",
     "repo": "vinta/hal-9000",
     "path": "plugins/hal-grammar-check",
-    "commit": "af3fa550b755091df95648b6749b96bf5c85da8f",
+    "commit": "1d9c596c95a75e2d65ee38de97c24d8282846a48",
     "marketplace": "hal-9000",
     "license": "MIT",
     "category": "flow",
@@ -662,7 +662,7 @@
     "name": "cc-arcade",
     "repo": "sezaakgun/cc-arcade",
     "path": ".",
-    "commit": "0baff06d31295850283c2eebe052f39bbc35473f",
+    "commit": "f9b21fedb3b5e4b7e02bc569783acf508958ab16",
     "marketplace": "cc-arcade",
     "license": "MIT",
     "category": "fun",
@@ -673,9 +673,9 @@
       "A pet that grows as Claude tests, commits and edits"
     ],
     "images": [
-      "https://raw.githubusercontent.com/sezaakgun/cc-arcade/0baff06d31295850283c2eebe052f39bbc35473f/docs/demo.gif",
-      "https://raw.githubusercontent.com/sezaakgun/cc-arcade/0baff06d31295850283c2eebe052f39bbc35473f/docs/screenshots/tetris.png",
-      "https://raw.githubusercontent.com/sezaakgun/cc-arcade/0baff06d31295850283c2eebe052f39bbc35473f/docs/screenshots/picker.png"
+      "https://raw.githubusercontent.com/sezaakgun/cc-arcade/f9b21fedb3b5e4b7e02bc569783acf508958ab16/docs/demo.gif",
+      "https://raw.githubusercontent.com/sezaakgun/cc-arcade/f9b21fedb3b5e4b7e02bc569783acf508958ab16/docs/screenshots/tetris.png",
+      "https://raw.githubusercontent.com/sezaakgun/cc-arcade/f9b21fedb3b5e4b7e02bc569783acf508958ab16/docs/screenshots/picker.png"
     ]
   },
   {
@@ -824,7 +824,7 @@
     "name": "nextcost",
     "repo": "HMarzban/claude-mod",
     "path": "plugins/nextcost",
-    "commit": "ed2048993c82f48375c0f3c754b8fe4893332213",
+    "commit": "56437d498893e405004b373dddb2041314b98230",
     "marketplace": "hossein-mods",
     "license": "MIT",
     "category": "cost",
@@ -890,7 +890,7 @@
     "name": "tokensaver",
     "repo": "AGregDev/claude-tokensaver",
     "path": ".",
-    "commit": "3f43ef312cf276bfeb6913fe8344bc687ac67282",
+    "commit": "0a4ba5c4c0745521de09a12cbc2a6b7751854a18",
     "marketplace": "claude-tokensaver",
     "license": "MIT",
     "category": "cost",
@@ -902,9 +902,9 @@
       "Warns when the cache goes cold and routes subagents to cheaper models"
     ],
     "images": [
-      "https://raw.githubusercontent.com/AGregDev/claude-tokensaver/3f43ef312cf276bfeb6913fe8344bc687ac67282/docs/clawd-pane.svg",
-      "https://raw.githubusercontent.com/AGregDev/claude-tokensaver/3f43ef312cf276bfeb6913fe8344bc687ac67282/docs/clawd-moods.svg",
-      "https://raw.githubusercontent.com/AGregDev/claude-tokensaver/3f43ef312cf276bfeb6913fe8344bc687ac67282/docs/clawd-band.svg"
+      "https://raw.githubusercontent.com/AGregDev/claude-tokensaver/0a4ba5c4c0745521de09a12cbc2a6b7751854a18/docs/clawd-pane.svg",
+      "https://raw.githubusercontent.com/AGregDev/claude-tokensaver/0a4ba5c4c0745521de09a12cbc2a6b7751854a18/docs/clawd-moods.svg",
+      "https://raw.githubusercontent.com/AGregDev/claude-tokensaver/0a4ba5c4c0745521de09a12cbc2a6b7751854a18/docs/clawd-band.svg"
     ]
   },
   {
@@ -953,7 +953,7 @@
     "name": "statuspane",
     "repo": "xuanji86/claude-statuspane",
     "path": ".",
-    "commit": "e183da95628d8a378afce9711d02785165dd43d2",
+    "commit": "e3fe009bdbd746c4adf31826c0bf8cecaa5fccf6",
     "marketplace": "claude-statuspane",
     "license": "MIT",
     "category": "overview",
@@ -965,9 +965,9 @@
       "Clickable settings and a progress row other tools can feed"
     ],
     "images": [
-      "https://raw.githubusercontent.com/xuanji86/claude-statuspane/e183da95628d8a378afce9711d02785165dd43d2/assets/card.svg",
-      "https://raw.githubusercontent.com/xuanji86/claude-statuspane/e183da95628d8a378afce9711d02785165dd43d2/assets/settings.svg",
-      "https://raw.githubusercontent.com/xuanji86/claude-statuspane/e183da95628d8a378afce9711d02785165dd43d2/assets/hidden.svg"
+      "https://raw.githubusercontent.com/xuanji86/claude-statuspane/e3fe009bdbd746c4adf31826c0bf8cecaa5fccf6/assets/card.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-statuspane/e3fe009bdbd746c4adf31826c0bf8cecaa5fccf6/assets/settings.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-statuspane/e3fe009bdbd746c4adf31826c0bf8cecaa5fccf6/assets/hidden.svg"
     ]
   },
   {
@@ -975,7 +975,7 @@
     "name": "agent-tree",
     "repo": "MikeGT4/agent-tree",
     "path": ".",
-    "commit": "268705405e02546e9f0376248247fe25ac986429",
+    "commit": "9c11ff70442e0b1180bec30b3e8819470be9e912",
     "marketplace": "agent-tree",
     "license": "MIT",
     "category": "overview",
@@ -995,7 +995,7 @@
     "name": "agentpane",
     "repo": "xuanji86/claude-agentpane",
     "path": ".",
-    "commit": "745ca30af88d53dbff742ef96cebc55eb30690e4",
+    "commit": "c3e8544a8b41ff4cf793ee0dd5b708a665c3ebd9",
     "marketplace": "claude-agentpane",
     "license": "MIT",
     "category": "overview",
@@ -1007,9 +1007,9 @@
       "Each one's conversation a click away"
     ],
     "images": [
-      "https://raw.githubusercontent.com/xuanji86/claude-agentpane/745ca30af88d53dbff742ef96cebc55eb30690e4/assets/pane.svg",
-      "https://raw.githubusercontent.com/xuanji86/claude-agentpane/745ca30af88d53dbff742ef96cebc55eb30690e4/assets/conversation.svg",
-      "https://raw.githubusercontent.com/xuanji86/claude-agentpane/745ca30af88d53dbff742ef96cebc55eb30690e4/assets/tab.svg"
+      "https://raw.githubusercontent.com/xuanji86/claude-agentpane/c3e8544a8b41ff4cf793ee0dd5b708a665c3ebd9/assets/pane.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-agentpane/c3e8544a8b41ff4cf793ee0dd5b708a665c3ebd9/assets/conversation.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-agentpane/c3e8544a8b41ff4cf793ee0dd5b708a665c3ebd9/assets/tab.svg"
     ]
   },
   {
@@ -1099,7 +1099,7 @@
     "name": "pr-watch",
     "repo": "ElirazKed/claude-code-pr-watch",
     "path": ".",
-    "commit": "53dec91d6fdc7dc5f50e39cebe128416dc24054f",
+    "commit": "1a667433fd6684578da60b5119a5c03a5e32a35e",
     "marketplace": "claude-code-pr-watch",
     "license": "MIT",
     "category": "overview",
@@ -1110,8 +1110,8 @@
       "One shared poller for every session on the machine"
     ],
     "images": [
-      "https://raw.githubusercontent.com/ElirazKed/claude-code-pr-watch/53dec91d6fdc7dc5f50e39cebe128416dc24054f/docs/screenshot.png",
-      "https://raw.githubusercontent.com/ElirazKed/claude-code-pr-watch/53dec91d6fdc7dc5f50e39cebe128416dc24054f/docs/prw.png"
+      "https://raw.githubusercontent.com/ElirazKed/claude-code-pr-watch/1a667433fd6684578da60b5119a5c03a5e32a35e/docs/screenshot.png",
+      "https://raw.githubusercontent.com/ElirazKed/claude-code-pr-watch/1a667433fd6684578da60b5119a5c03a5e32a35e/docs/prw.png"
     ]
   },
   {
@@ -1139,7 +1139,7 @@
     "name": "hud",
     "repo": "hoobnn/hoobnn-agent-mods",
     "path": "claude-code/hud",
-    "commit": "a01bdaa7acc06f3f0ab8c11e0c07a9c2446f3603",
+    "commit": "982196ec71a403dfe6e4ce0f85b4d093a82b3e87",
     "marketplace": "hoobnn-agent-mods",
     "license": "MIT",
     "category": "overview",
@@ -1151,7 +1151,7 @@
       "A task summary and a detail pane"
     ],
     "images": [
-      "https://raw.githubusercontent.com/hoobnn/hoobnn-agent-mods/a01bdaa7acc06f3f0ab8c11e0c07a9c2446f3603/claude-code/hud/assets/themes/neon.png"
+      "https://raw.githubusercontent.com/hoobnn/hoobnn-agent-mods/982196ec71a403dfe6e4ce0f85b4d093a82b3e87/claude-code/hud/assets/themes/neon.png"
     ]
   },
   {
@@ -1260,7 +1260,7 @@
     "name": "cc-split-diff-view",
     "repo": "neteye-platform/cc-split-diff-view",
     "path": ".",
-    "commit": "b353ebb66d20ea2b3cc64039193f354e6f4759e2",
+    "commit": "f7d570a4b5accec18a3de939eed7a754a9fb868a",
     "marketplace": "neteye-platform",
     "license": "Apache-2.0",
     "licenseFile": "LICENSE-APACHE",
@@ -1273,8 +1273,8 @@
       "/diffsplit reviews all uncommitted changes the same way"
     ],
     "images": [
-      "https://raw.githubusercontent.com/neteye-platform/cc-split-diff-view/b353ebb66d20ea2b3cc64039193f354e6f4759e2/docs/split-diff-view.png",
-      "https://raw.githubusercontent.com/neteye-platform/cc-split-diff-view/b353ebb66d20ea2b3cc64039193f354e6f4759e2/docs/diffsplit-pane.png"
+      "https://raw.githubusercontent.com/neteye-platform/cc-split-diff-view/f7d570a4b5accec18a3de939eed7a754a9fb868a/docs/split-diff-view.png",
+      "https://raw.githubusercontent.com/neteye-platform/cc-split-diff-view/f7d570a4b5accec18a3de939eed7a754a9fb868a/docs/diffsplit-pane.png"
     ]
   },
   {
@@ -1282,7 +1282,7 @@
     "name": "glass",
     "repo": "rashedInt32/glass",
     "path": ".",
-    "commit": "f1fe2d02b27e7812394daf4e8c0fa99c04a1b0e7",
+    "commit": "d367ed6746f30a47e9bf9d1a815ab909b4076a18",
     "marketplace": "glass",
     "license": "MIT",
     "category": "read",
@@ -1294,9 +1294,9 @@
       "Painted tool rows and turn headers"
     ],
     "images": [
-      "https://raw.githubusercontent.com/rashedInt32/glass/f1fe2d02b27e7812394daf4e8c0fa99c04a1b0e7/docs/shots/tarnish.png",
-      "https://raw.githubusercontent.com/rashedInt32/glass/f1fe2d02b27e7812394daf4e8c0fa99c04a1b0e7/docs/shots/overprint.png",
-      "https://raw.githubusercontent.com/rashedInt32/glass/f1fe2d02b27e7812394daf4e8c0fa99c04a1b0e7/docs/shots/ironbow.png"
+      "https://raw.githubusercontent.com/rashedInt32/glass/d367ed6746f30a47e9bf9d1a815ab909b4076a18/docs/shots/tarnish.png",
+      "https://raw.githubusercontent.com/rashedInt32/glass/d367ed6746f30a47e9bf9d1a815ab909b4076a18/docs/shots/overprint.png",
+      "https://raw.githubusercontent.com/rashedInt32/glass/d367ed6746f30a47e9bf9d1a815ab909b4076a18/docs/shots/ironbow.png"
     ]
   },
   {
@@ -1368,7 +1368,7 @@
     "name": "mdview",
     "repo": "xuanji86/claude-mdview",
     "path": ".",
-    "commit": "d3050cd6046470e644106d0811ea247b3d2fde22",
+    "commit": "82bdcc6bed9b3377db976415911c4ebb2f6f6031",
     "marketplace": "claude-mdview",
     "license": "MIT",
     "category": "read",
@@ -1379,8 +1379,8 @@
       "Point at any block to have Claude edit it"
     ],
     "images": [
-      "https://raw.githubusercontent.com/xuanji86/claude-mdview/d3050cd6046470e644106d0811ea247b3d2fde22/assets/pane.svg",
-      "https://raw.githubusercontent.com/xuanji86/claude-mdview/d3050cd6046470e644106d0811ea247b3d2fde22/assets/edit.svg"
+      "https://raw.githubusercontent.com/xuanji86/claude-mdview/82bdcc6bed9b3377db976415911c4ebb2f6f6031/assets/pane.svg",
+      "https://raw.githubusercontent.com/xuanji86/claude-mdview/82bdcc6bed9b3377db976415911c4ebb2f6f6031/assets/edit.svg"
     ]
   },
   {
@@ -1388,7 +1388,7 @@
     "name": "figures",
     "repo": "natsukium/claude-code-figures-plugin",
     "path": ".",
-    "commit": "f18c6bb39e0c0f104c3c0a956927e56e3255eee7",
+    "commit": "7163859c9c8995659f68c07f999462651a9b4510",
     "marketplace": "figures",
     "license": "Apache-2.0",
     "category": "read",
@@ -1399,8 +1399,8 @@
       "Works in kitty-graphics terminals"
     ],
     "images": [
-      "https://raw.githubusercontent.com/natsukium/claude-code-figures-plugin/f18c6bb39e0c0f104c3c0a956927e56e3255eee7/docs/demo.png",
-      "https://raw.githubusercontent.com/natsukium/claude-code-figures-plugin/f18c6bb39e0c0f104c3c0a956927e56e3255eee7/docs/figures-pane.png"
+      "https://raw.githubusercontent.com/natsukium/claude-code-figures-plugin/7163859c9c8995659f68c07f999462651a9b4510/docs/demo.png",
+      "https://raw.githubusercontent.com/natsukium/claude-code-figures-plugin/7163859c9c8995659f68c07f999462651a9b4510/docs/figures-pane.png"
     ]
   },
   {
@@ -1645,7 +1645,7 @@
     "name": "noctis",
     "repo": "synex1437/noctis",
     "path": ".",
-    "commit": "37d68d8f3a245be127c06ca5348862cafea2cdf7",
+    "commit": "0ae201d0276631a5c78a7d21fed7bcd40c95f66c",
     "marketplace": "noctis",
     "license": "MIT",
     "category": "flow",
@@ -1657,8 +1657,8 @@
       "Works through a list of jobs with /noctis:start"
     ],
     "images": [
-      "https://raw.githubusercontent.com/synex1437/noctis/37d68d8f3a245be127c06ca5348862cafea2cdf7/docs/before-after.svg",
-      "https://raw.githubusercontent.com/synex1437/noctis/37d68d8f3a245be127c06ca5348862cafea2cdf7/docs/demo.svg"
+      "https://raw.githubusercontent.com/synex1437/noctis/0ae201d0276631a5c78a7d21fed7bcd40c95f66c/docs/before-after.svg",
+      "https://raw.githubusercontent.com/synex1437/noctis/0ae201d0276631a5c78a7d21fed7bcd40c95f66c/docs/demo.svg"
     ]
   },
   {
@@ -1666,7 +1666,7 @@
     "name": "nanoflow",
     "repo": "nanosite-ai/nanoflow",
     "path": ".",
-    "commit": "1128edaf46fdebaa5741e12b1a76a2b5ed6c51c9",
+    "commit": "ff0feaa7a7e3ca0ce08b61303bc25aa20f04534d",
     "marketplace": "nanoflow",
     "license": "MIT",
     "category": "flow",
@@ -1678,8 +1678,8 @@
       "A secrets vault Claude uses without seeing the values"
     ],
     "images": [
-      "https://raw.githubusercontent.com/nanosite-ai/nanoflow/1128edaf46fdebaa5741e12b1a76a2b5ed6c51c9/docs/media/demo.gif",
-      "https://raw.githubusercontent.com/nanosite-ai/nanoflow/1128edaf46fdebaa5741e12b1a76a2b5ed6c51c9/docs/media/claude-desktop.png"
+      "https://raw.githubusercontent.com/nanosite-ai/nanoflow/ff0feaa7a7e3ca0ce08b61303bc25aa20f04534d/docs/media/demo.gif",
+      "https://raw.githubusercontent.com/nanosite-ai/nanoflow/ff0feaa7a7e3ca0ce08b61303bc25aa20f04534d/docs/media/claude-desktop.png"
     ]
   },
   {
